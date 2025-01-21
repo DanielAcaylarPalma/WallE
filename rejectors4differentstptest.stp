@@ -1,0 +1,102 @@
+START CONTROL,
+*PROJECT WALLE (DECEMBER 2, 2022)
+C(A) = WALLE_SEP24V2.ASC;WALLE_OCT24V2.ASC,
+C(B) = WALLE_NOV24V2.ASC;WALLE_DEC24V2.ASC,
+
+Y,
+OLDNAMES,
+CSV2R,
+TERSE,
+FINISH CONTROL,
+START DATA,
+ORDER 1234567890XV,
+SERIAL NUMBER IN COLUMNS 1-10,
+CARD CHARACTERS BINARY 300000,
+TEMPORARY/9999999/,
+
+F=ADF,
+DI $resp = $1-10,
+di $blank = 0,
+
+DI $Q17i = 0,
+DI $A_Q17c = 0,
+
+
+!Hyacinth
+DM $hyacinth = $5-16/493143111002+493144111002+494167111002,
+!Petunia
+DM $petunia = $1-10/40019695+40019696+40019698,
+
+READ (A) $1-99999,
+!!!!!!!!!!!!!SCREENER
+UL $hyacinth/NB, goto @petscr,
+[*INSERT WallE_resprejector]
+IF $hyacinth/NB, goto @DIARY,
+
+@petscr,
+UL $petunia/NB, goto @DIARY,
+[*INSERT WallE_resprejectornew]
+
+@DIARY,
+READ (B) $1-99999,
+!!!!!!!!!!!!!DIARY
+UL $hyacinth/NB, goto @petdia,
+[*INSERT Rejectors-StubsOld]
+IF $hyacinth/NB, goto @end,
+
+@petdia,
+UL $petunia/NB, goto @end,
+[*INSERT Rejectors-StubsNew]
+
+@end,
+
+IF ($Q12023/NB+$Apr2023Inci/NB+$Jun2023Inci/NB+$JUL2023inci/NB+$AUG2023inci/NB+$SEP2023inci/NB+($NewQuarter/NB.$Q200/1)).($TQ10/2),  WRITE,
+
+FINISH DATA,
+START TABLES,
+%JH = 'PROJECT WALL E',  
+
+
+
+
+!======FOR QPS WINDOWS (% + raw - for datachecking)
+ 
+F= CTU'='/CAZ'-'/CZP'-'/SDV/UCH/NPGN/NPTC/TID/RLW40/LBB1/TOC/SPL250/CNZ'*'/URS/
+PCS/PRC/LPP55/SER/CLG1/RNC1/DAT/BAL/RBL/CLW7/PBL/MOD/MED,
+ 
+!F=MCB29,        ! ------ Less than 30 base
+F=BTS,          ! ------ Blank Tables Suppress - standard
+F=BCS,          ! ------ Blank Column Suppress - standard
+F=DPR4,          ! ------ Decimal % - standard
+F=DPT0,          ! ------ Decimal Raw Count
+F=DPA2,          ! ------ Decimal Mean Sum
+F=DPS2,          ! ------ Decimal Std
+F=BRS,          ! ------ Blank Row Suppress - kindly edit based on tabspecs
+
+
+F= SHG1/SIG1/SLA95/SLB95/BRS/NFSL, ! standard by segment
+
+!F= SHG-1/SIG1/SLA95/SLB95/NFSL, ! ROUND ROBIN
+
+
+%UNR = '(UNWEIGHTED BASE)',
+%AVG = 'Mean Score<d2>',
+%SDV = 'Standard Deviation<d2>',
+
+[*DATA HEADERWAVE3 = HA,HB,HTargetMarket1Q187]
+
+
+
+! SELECT WR $WTS,
+
+[*SET T = 0]
+
+
+[*DO Z = 1:3]
+IF ($TQ10/2), T #[+T] = $TA_Q10_1new * $[HEADERWAVE3.Z],
+BT = "Among rejectors of fintech",
+[*END Z]
+
+
+FINISH TABLES,
+

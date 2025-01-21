@@ -3,7 +3,7 @@ START CONTROL,
 
 !C = WALLE_JAN24V2.asc;WALLE_FEB24V2.asc;WALLE_MAR24V2.asc,
 !C = WALLE_APR24V2.asc;WALLE_MAY24V2.asc;WALLE_JUN24V2.asc,
-C = WALLE_JAN24V3.asc;WALLE_FEB24V2.asc;WALLE_MAR24V2.asc;WALLE_APR24V2.asc;WALLE_MAY24V2.asc;WALLE_JUN24V2.asc;WALLE_JUL24V2.ASC;WALLE_AUG24V2.ASC;WALLE_SEP24V2.ASC,
+C = WALLE_JAN24V3.asc;WALLE_FEB24V2.asc;WALLE_MAR24V2.asc;WALLE_APR24V2.asc;WALLE_MAY24V2.asc;WALLE_JUN24V2.asc;WALLE_JUL24V2.ASC;WALLE_AUG24V2.ASC;WALLE_SEP24V2.ASC;WALLE_OCT24v2.ASC;WALLE_NOV24v2.ASC;WALLE_DEC24v2.ASC,
 Y,
 OLDNAMES,
 CSV2R,
@@ -21,6 +21,8 @@ TEMPORARY/9999999/,
 F=ADF,
 
 [*INSERT WALL_E_resp]
+DM $Q32024onwards = $Q32024/NB+$Q42024/NB,
+
 [*INSERT WALLEv2_CARDCOL_CATERGORY]
 [*INSERT ADDITIONAL_COLUMNS]
 [*INSERT ADDITIONAL_COLUMNS_JAN_FEB]
@@ -468,7 +470,7 @@ DM $HT = T,
   H = "TOTAL*(A)",
 ! IF ($DEC2023/NB+$NOV2023/NB).$TQ16d/1, CK $Q106/NB, 
 
-IF $Q12024/NB+$Q22024/NB+$Q32024/NB, WRITE,
+IF $Q12024/NB+$Q22024/NB+$Q32024/NB+$Q42024/NB, WRITE,
   
 
 
@@ -569,7 +571,7 @@ T #[+T] = $TQ102C * $[HX.X],
 [*END X]
 
 
-IF $DEC2023/NB+($NOV2023/NB.$A_Q102/1)+$Q12024/NB+$Q22024/NB+$Q32024/NB, then,
+IF $DEC2023/NB+($NOV2023/NB.$A_Q102/1)+$Q12024/NB+$Q22024/NB+$Q32024onwards/NB, then,
 ! IF $DEC2023/NB+(($NOV2023/NB).$A_Q102/1), then,
 !~~~~~~~~~~~~MultipleTopics18
 [*DO X = 1:3]
@@ -623,9 +625,9 @@ end if,
 !~~~~~~~~~~~~MultipleTopicsSelect18
 [*SET s = 0]
 T #[+T] = $TQ104R1 * $HMOP,
-IF ($A_Q102/1).($Q32024/NB), T #[T] = $TQ104R1 * 1,
+IF ($A_Q102/1).($Q42024/NB), T #[T] = $TQ104R1 * 1,
 [*DO B = 2:9]
-IF ($A_Q102/[B]).($Q32024/NB), T #[T] = $TQ104R[B] * [B],
+IF ($A_Q102/[B]).($Q42024/NB), T #[T] = $TQ104R[B] * [B],
 [*END B]
 
 !$DEC2023/NB+($NOV2023/NB.$A_Q102/1)+$Q12024/NB+$Q22024/NB+
@@ -633,9 +635,9 @@ IF $TQ17c/1, then,
 !~~~~~~~~~~~~MultipleTopicsSelect18
 [*SET s = 0]
 T #[+T] = $TQ104R1 * $HMOP,
-IF ($A_Q102/1).($Q32024/NB), T #[T] = $TQ104R1 * 1,
+IF ($A_Q102/1).($Q42024/NB), T #[T] = $TQ104R1 * 1,
 [*DO B = 2:9]
-IF ($A_Q102/[B]).($Q32024/NB), T #[T] = $TQ104R[B] * [B],
+IF ($A_Q102/[B]).($Q42024/NB), T #[T] = $TQ104R[B] * [B],
 [*END B]
 BT = "Among GCash users (Q17c = Code 1)",
 end if,
@@ -646,9 +648,9 @@ IF $TQ17c/N1, then,
 !~~~~~~~~~~~~MultipleTopicsSelect18
 [*SET s = 0]
 T #[+T] = $TQ104R1 * $HMOP,
-IF ($A_Q102/1).($Q32024/NB), T #[T] = $TQ104R1 * 1,
+IF ($A_Q102/1).($Q42024/NB), T #[T] = $TQ104R1 * 1,
 [*DO B = 2:9]
-IF ($A_Q102/[B]).($Q32024/NB), T #[T] = $TQ104R[B] * [B],
+IF ($A_Q102/[B]).($Q42024/NB), T #[T] = $TQ104R[B] * [B],
 [*END B]
 BT = "Among Non-users of GCash (Q17c = Not Code 1)",
 end if,
@@ -680,7 +682,6 @@ T #[+T] = $TQ104 * $[HX.X],
 BT = "Among Non-users of GCash (Q17c = Not Code 1)",
 [*END X]
 end if,
-[*5]
 
 
 !~~~~~~~~~~~~MultipleTopics4
@@ -821,6 +822,7 @@ BT = "Among Aware of Gcash",
 [*END X]
 
 
+[*5]
 
 FINISH TABLES,
 

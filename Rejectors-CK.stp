@@ -1,0 +1,14 @@
+
+[*DATA Q42024newvars = 
+QAFR1,
+QUQR1,
+QMR1,
+QDR1,
+QWR1]
+
+
+[*DO R = 1:1]
+[*DO A = 5:5]
+IF ($FR1d/[A]).($Q200/1).($TQ10/2), CK ($T_[Q42024newvars.R]_[A]/NB),
+[*END A]
+[*END R]

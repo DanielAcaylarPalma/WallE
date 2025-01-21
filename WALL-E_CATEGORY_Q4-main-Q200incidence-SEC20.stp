@@ -5,9 +5,10 @@ START CONTROL,
 !C = rejectdata\P_WALLE_2023Q3_V2_PQ10.ASC;rejectdata\WALLE_Q3_JUL_INCIONLY_Q10F1_V2.ASC;rejectdata\WALLE_Q3_AUG_INCIONLY_Q10F1_V2.ASC;rejectdata\WALLE_Q3_SEP_INCIONLY_Q10F1_V2.ASC;WALL_E_Q4_OCT.ASC;WALLE_NOVEMBER.ASC;WALLEDEC_1_10.ASC;WALLE_JAN24V3.asc;WALLE_FEB24V2.asc;WALLE_MAR24V2.asc;WALLE_APR24V2.asc;WALLE_MAY24V2.asc;WALLE_JUN24V2.asc;WALLE_JUL24V2.ASC;WALLE_AUG24V2.ASC;WALLE_SEP24V2.ASC,
 !C = rejectdata\WALLE_Q2_APR_TOTALV4_Q10F1_V2.ASC;rejectdata\WALLE_Q2_JUN_INCIBOS_Q10F1_V2.ASC;rejectdata\WALLE_Q2_MAY_MAINONLY_CODED.ASC;rejectdata\P_WALLE_2023Q2_PUNCHED_JUN_Q10F1.ASC;rejectdata\P_WALLE_2023Q3_V2_PQ10.ASC;rejectdata\WALLE_Q3_JUL_INCIONLY_Q10F1_V2.ASC;rejectdata\WALLE_Q3_AUG_INCIONLY_Q10F1_V2.ASC;rejectdata\WALLE_Q3_SEP_INCIONLY_Q10F1_V2.ASC,
 !C = rejectdata\WALLE_Q2_APR_TOTALV4_Q10F1_V2.ASC;rejectdata\WALLE_Q2_JUN_INCIBOS_Q10F1_V2.ASC;rejectdata\WALLE_Q2_MAY_MAINONLY_CODED.ASC;rejectdata\P_WALLE_2023Q2_PUNCHED_JUN_Q10F1.ASC;rejectdata\P_WALLE_2023Q3_V2_PQ10.ASC;rejectdata\WALLE_Q3_JUL_INCIONLY_Q10F1_V2.ASC;rejectdata\WALLE_Q3_AUG_INCIONLY_Q10F1_V2.ASC;rejectdata\WALLE_Q3_SEP_INCIONLY_Q10F1_V2.ASC,
-!C = <dataincidence.txt>,
-C = WALL_E_Q4_OCT.ASC;WALLE_NOVEMBER.ASC;WALLEDEC_1_10.ASC;WALLE_JAN24V3.asc;WALLE_FEB24V2.asc;WALLE_MAR24V2.asc;WALLE_APR24V2.asc;WALLE_MAY24V2.asc;WALLE_JUN24V2.asc;WALLE_JUL24V2.ASC;WALLE_AUG24V2.ASC;WALLE_SEP24V2.ASC;WALLE_OCT24v2.ASC;WALLE_NOV24v2.ASC;WALLE_DEC24v2.ASC,
-
+!C = <dataincidence.txt>, !Q2 2024 folder
+!C = WALL_E_Q4_OCT.ASC;WALLE_NOVEMBER.ASC;WALLEDEC_1_10.ASC;WALLE_JAN24V3.asc;WALLE_FEB24V2.asc;WALLE_MAR24V2.asc;WALLE_APR24V2.asc;WALLE_MAY24V2.asc;WALLE_JUN24V2.asc;WALLE_JUL24V2.ASC;WALLE_AUG24V2.ASC;WALLE_SEP24V2.ASC;WALLE_OCT24v2.ASC;WALLE_NOV24v2.ASC;WALLE_DEC24v2.ASC,
+!C = rejectdata\WALLE_Q2_APR_TOTALV4_Q10F1_V2.ASC;rejectdata\WALLE_Q2_JUN_INCIBOS_Q10F1_V2.ASC;rejectdata\WALLE_Q2_MAY_MAINONLY_CODED.ASC;rejectdata\P_WALLE_2023Q3_V2_PQ10.ASC;rejectdata\WALLE_Q3_JUL_INCIONLY_Q10F1_V2.ASC;rejectdata\WALLE_Q3_AUG_INCIONLY_Q10F1_V2.ASC;rejectdata\WALLE_Q3_SEP_INCIONLY_Q10F1_V2.ASC;WALL_E_Q4_OCT.ASC;WALLE_NOVEMBER.ASC;WALLEDEC_1_10.ASC;WALLE_JAN24V3.asc;WALLE_FEB24V2.asc;WALLE_MAR24V2.asc;WALLE_APR24V2.asc;WALLE_MAY24V2.asc;WALLE_JUN24V2.asc;WALLE_JUL24V2.ASC;WALLE_AUG24V2.ASC;WALLE_SEP24V2.ASC;WALLE_OCT24v2.ASC;WALLE_NOV24v2.ASC;WALLE_DEC24v2.ASC,
+C = <data.txt>,
 Y,
 OLDNAMES,
 CSV2R,
@@ -96,6 +97,7 @@ $Q42023/NB,
 $Q12024/NB,
 $Q22024/NB,
 $Q32024/NB,
+$Q42024/NB,
 [*DO A = 1:12]
 T,
 $HAv/[A].$Q42022/NB,
@@ -106,6 +108,7 @@ $HAv/[A].$Q42023/NB,
 $HAv/[A].$Q12024/NB,
 $HAv/[A].$Q22024/NB,
 $HAv/[A].$Q32024/NB,
+$HAv/[A].$Q42024/NB,
 [*END A]
 HT = "HEADER A. GENERAL PROFILE",
 H  = "<F=SHG1>
@@ -118,6 +121,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 GENDER****
 MALE***
@@ -130,6 +134,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 FEMALE***
 TOTAL*(a)<S>;
@@ -141,6 +146,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 LIFESTAGE****
 Students (20 yo and below)***
@@ -153,6 +159,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 Yuppies (21-30 yo)***
 TOTAL*(a)<S>;
@@ -164,6 +171,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 Transitioners (31-35 yo)***
 TOTAL*(a)<S>;
@@ -175,6 +183,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 Balancers (36-45 yo)***
 TOTAL*(a)<S>;
@@ -186,6 +195,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 Older Adults/Retirees (46-65 yo)***
 TOTAL*(a)<S>;
@@ -197,6 +207,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 
 SEC****
@@ -210,6 +221,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 C1***
 TOTAL*(a)<S>;
@@ -221,6 +233,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 ABC1***
 TOTAL*(a)<S>;
@@ -232,6 +245,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 C2***
 TOTAL*(a)<S>;
@@ -243,6 +257,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 D***
 TOTAL*(a)<S>;
@@ -253,7 +268,8 @@ Q3 2023 *(e);
 Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
-Q3 2024 *(i)",
+Q3 2024 *(i);
+Q4 2024 *(j)",
 
 
 DM $HBTL =
@@ -266,6 +282,7 @@ $Q42023/NB,
 $Q12024/NB,
 $Q22024/NB,
 $Q32024/NB,
+$Q42024/NB,
 [*DO A = 1:15]
 T,
 $HBv/[A].$Q42022/NB,
@@ -276,6 +293,7 @@ $HBv/[A].$Q42023/NB,
 $HBv/[A].$Q12024/NB,
 $HBv/[A].$Q22024/NB,
 $HBv/[A].$Q32024/NB,
+$HBv/[A].$Q42024/NB,
 [*END A]
 HT = "HEADER B. LOCALE AND MACROREGION",
 H  = "<F=SHG1>
@@ -288,6 +306,8 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
+
 LOCALE****
 URBAN (NET)***
 TOTAL*(a)<S>;
@@ -299,6 +319,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 RURAL (NET)***
 TOTAL*(a)<S>;
@@ -310,6 +331,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 
 NCR (NET)***
@@ -322,6 +344,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 
 NORTH CENTRAL LUZON****
@@ -335,6 +358,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 NCL Urban***
 TOTAL*(a)<S>;
@@ -346,6 +370,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 NCL Rural***
 TOTAL*(a)<S>;
@@ -357,6 +382,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 
 SOUTH LUZON****
@@ -370,6 +396,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 SL Urban***
 TOTAL*(a)<S>;
@@ -381,6 +408,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 SL Rural***
 TOTAL*(a)<S>;
@@ -392,6 +420,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 
 VISAYAS****
@@ -405,6 +434,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 Visayas Urban***
 TOTAL*(a)<S>;
@@ -416,6 +446,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 Visayas Rural***
 TOTAL*(a)<S>;
@@ -427,6 +458,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 
 MINDANAO****
@@ -440,6 +472,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 Mindanao Urban***
 TOTAL*(a)<S>;
@@ -451,6 +484,7 @@ Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
 Q3 2024 *(i);
+Q4 2024 *(j);
 
 Mindanao Rural***
 TOTAL*(a)<S>;
@@ -461,7 +495,8 @@ Q3 2023 *(e);
 Q4 2023 *(f);
 Q1 2024 *(g);
 Q2 2024 *(h);
-Q3 2024 *(i)",
+Q3 2024 *(i);
+Q4 2024 *(j)",
 
 
 DI $QProvince = $120-121,
@@ -2226,7 +2261,7 @@ F= SHG1/SIG1/SLA95/SLB95/NFSL, ! ROUND ROBIN
 
 [*DATA HEADERWAVE3 = HGnewinc2TRev,HGnewinc4T,HGnewinc9T,NewClientHeaderT,HGnewinc4,HGnewinc5,HGnewinc6,HGnewinc7,HGnewinc8]
 [*DATA HEADERWAVE3legacy = HATL,HBTL]
-[*DATA HEADERWAVE3norm = HAT,HBT,HATM,HBTM,HTargetMarket1Q187T]
+[*DATA HEADERWAVE3norm = HATM,HBTM,HATM,HBTM,HTargetMarket1Q187T]
 
 
 !
@@ -2272,6 +2307,22 @@ RURAL]
 
 [*SET T = 0]
 
+
+[*DO Z = 1:2]
+T #[+T] = $TQ17cNET * $[HEADERWAVE3legacy.Z],
+BT = "ALL RESPONDENTS",
+[*END Z]
+
+
+
+[*SK 111]
+
+[*DO Z = 1:4]
+IF ($A_Q187new/5).($TQ10/2), T #[+T] = $TPROFILE * $[HEADERWAVE3norm.Z],
+BT = "AMONG STUDENTS WHO ARE REJECTORS",
+[*END Z]
+
+
 [*DO Z = 1:4]
 IF ($A_Q187new/5).($TQ10/2), T #[+T] = $TPROFILE * $[HEADERWAVE3norm.Z],
 BT = "AMONG STUDENTS WHO ARE REJECTORS",
@@ -2287,7 +2338,6 @@ IF ($Q3/12+13+14+15+16+17).($Q17i/1), T #[+T] = $TPROFILE * $[HEADERWAVE3norm.Z]
 BT = "AMONG P1M USERS IN MINDANAO",
 [*END Z]
 
-[*SK 111]
 !======
 [*DO Z = 1:2]
 T #[+T] = $Tincidencedata * $[HEADERWAVE3norm.Z],
@@ -2297,27 +2347,27 @@ BT = "ALL RESPONDENTS",
 
 [*DO X = 1:2]
 !======
-[*DO Z = 1:3]
+[*DO Z = 1:2]
 IF [filters.X], T #[+T] = $Tincidencedata * $[HEADERWAVE3norm.Z],
 BT = "AMONG [filtername.X]",
 [*END Z]
 [*END X]
 
 !======
-[*DO Z = 1:3]
+[*DO Z = 1:2]
 T #[+T] = $TQ187new * $[HEADERWAVE3norm.Z],
 BT = "ALL RESPONDENTS",
 [*END Z]
 
 if $Q17i/1, then,
-[*DO Z = 1:3]
+[*DO Z = 1:2]
 T #[+T] = $TQ187new * $[HEADERWAVE3norm.Z],
 BT = "AMONG USERS OF FINTECH APPS",
 [*END Z]
 END IF,
 
 if $Q17i/2, then,
-[*DO Z = 1:3]
+[*DO Z = 1:2]
 T #[+T] = $TQ187new * $[HEADERWAVE3norm.Z],
 BT = "AMONG NON-USERS OF FINTECH APPS",
 [*END Z]
@@ -2325,14 +2375,14 @@ END IF,
 
 
 !======
-[*DO Z = 1:3]
+[*DO Z = 1:2]
 T #[+T] = $BRAND_LAD * $NewClientHeaderv2,
 BT = "ALL RESPONDENTS",
 [*END Z]
 
 if $Q17i/1, then,
 !======
-[*DO Z = 1:3]
+[*DO Z = 1:2]
 T #[+T] = $BRAND_LAD * $NewClientHeaderv2,
 BT = "AMONG USERS OF FINTECH APPS",
 [*END Z]
@@ -2340,7 +2390,7 @@ END IF,
 
 if $Q17i/2, then,
 !======
-[*DO Z = 1:3]
+[*DO Z = 1:2]
 T #[+T] = $BRAND_LAD * $NewClientHeaderv2,
 BT = "AMONG NON-USERS OF FINTECH APPS",
 [*END Z]
@@ -2394,7 +2444,7 @@ END IF,
 
 
 !======
-[*DO Z = 1:3]
+[*DO Z = 1:2]
 T #[+T] = $TPostpaidUser * $[HEADERWAVE3norm.Z],
 BT = "ALL RESPONDENTS",
 [*END Z]
@@ -2402,7 +2452,7 @@ BT = "ALL RESPONDENTS",
 
 if $Q17i/1, then,
 !======
-[*DO Z = 1:3]
+[*DO Z = 1:2]
 T #[+T] = $TPostpaidUser * $[HEADERWAVE3norm.Z],
 BT = "AMONG USERS OF FINTECH APPS",
 [*END Z]
@@ -2410,7 +2460,7 @@ end if,
 
 if $Q17i/2, then,
 !======
-[*DO Z = 1:3]
+[*DO Z = 1:2]
 T #[+T] = $TPostpaidUser * $[HEADERWAVE3norm.Z],
 BT = "AMONG NON-USERS OF FINTECH APPS",
 [*END Z]

@@ -359,6 +359,36 @@ DID NOT DO THIS TRANSACTION;
 Total Count<c>",
 
 
+!DM $Q8b[u]_offlineonlyrgd2 = ($Q8b[u]_offlineonlyrgd/NB).N($Q8b[u]_digitalonlyrgd/NB+$Q8b[u]_hybridrgd/NB),
+!DM $Q8b[u]_digitalonlyrgd2 = ($Q8b[u]_digitalonlyrgd/NB).N($Q8b[u]_offlineonlyrgd/NB+$Q8b[u]_hybridrgd/NB),
+!DM $Q8b[u]_hybridrgd2 = N($Q8b[u]_offlineonlyrgd2/NB).N($Q8b[u]_digitalonlyrgd2/NB).($Q8b[u]_hybridrgd/NB),
+
+DM $Q8b[u]_offlineonlyrgd2 = ([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/7+8+9+10)[*SLE]+[*END A]).N([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/5+6)[*SLE]+[*END A]),
+DM $Q8b[u]_digitalonlyrgd2 = N([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/7+8+9+10)[*SLE]+[*END A]).([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/5+6)[*SLE]+[*END A]),
+DM $Q8b[u]_hybridrgd2 = ([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/7+8+9+10)[*SLE]+[*END A]).([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/5+6)[*SLE]+[*END A]),
+
+DM $TQ8b[u]_inci_rb_RGD2 = 
+$Q8b[u]_totalrgd/NB,
+$Q8b[u]_offlineonlyrgd2/NB,
+$Q8b[u]_offlineonlyrgd2/NB+$Q8b[u]_hybridrgd2/NB,
+$Q8b[u]_digitalonlyrgd2/NB+$Q8b[u]_hybridrgd2/NB,
+$Q8b[u]_digitalonlyrgd2/NB,
+$Q8b[u]_hybridrgd2/NB,
+$Q8b[u]_totalrgd/B+R,
+F,
+XT = "Q8b[u]. GENERAL FINANCIAL TRANSACTIONS METHODS (P[u]M) - INCIDENCE - REGARDLESS - REBASED",
+X = "
+TOTAL INCIDENCE;
+NON-DIGITAL/ OFFLINE ONLY;
+TOTAL NON-DIGITAL/ OFFLINE;
+DIGITAL;
+`    DIGITAL ONLY;
+`    HYBRID (BOTH DIGITAL AND OFFLINE);
+DID NOT DO THIS TRANSACTION;
+Total Count<c>",
+
+
+
 DM $Q8b[u]_RGD = 
 [*DO A = 1:Q8blen]
 $T_Q8b[u]_[Q8B2.A]/5..10,

@@ -1,0 +1,1843 @@
+
+DM $Q10_1nottrust = $Q10_1/
+13+67+
+15+
+7+16+25+40+41+42+46+51+56+58+50+2+17+74+20+33+47+24+
+7+16+25+40+41+42+46+51+56+58+50+
+2+17+74+
+20+33+47+
+24+
+
+1+6+8+10+48+57+61+
+1+6+8+10+48+57+61+
+
+37+43+5+14+34+52+53+65+68+
+37+
+43+
+5+
+14+34+52+53+65+68+
+
+3+4+12+59+
+3+4+
+12+59+
+
+
+18+22+23+26+27+30+31+32+36+38+44+45+70+55+71+60+62+64+66+72+73+75+
+18+
+22+
+23+
+26+
+27+
+30+
+31+
+32+
+36+
+38+
+44+
+45+70+
+55+71+
+60+
+62+
+64+
+66+
+72+
+73+
+75+
+
+
+9999,
+
+DM $Q10_1notrelevance = $Q10_1/
+13+67+
+15+
+9+11+19+21+54+29+39+69+28+35+63+49+
+9+11+19+21+54+
+29+
+39+69+
+28+
+35+
+63+
+49+
+
+1+6+8+10+48+57+61+
+1+6+8+10+48+57+61+
+
+37+43+5+14+34+52+53+65+68+
+37+
+43+
+5+
+14+34+52+53+65+68+
+
+3+4+12+59+
+3+4+
+12+59+
+
+
+18+22+23+26+27+30+31+32+36+38+44+45+70+55+71+60+62+64+66+72+73+75+
+18+
+22+
+23+
+26+
+27+
+30+
+31+
+32+
+36+
+38+
+44+
+45+70+
+55+71+
+60+
+62+
+64+
+66+
+72+
+73+
+75+
+
+
+9999,
+
+DM $TQ10_1 = 
+$Q10_1/13+67,
+$Q10_1/15,
+
+($Q10_1/9+11+19+21+54+29+39+69+28+35+63+49).($Q10_1nottrust/B),
+($Q10_1/9+11+19+21+54).($Q10_1nottrust/B),
+($Q10_1/29).($Q10_1nottrust/B),
+($Q10_1/39+69).($Q10_1nottrust/B),
+($Q10_1/28).($Q10_1nottrust/B),
+($Q10_1/35).($Q10_1nottrust/B),
+($Q10_1/63).($Q10_1nottrust/B),
+($Q10_1/49).($Q10_1nottrust/B),
+
+$Q10_1/9+11+19+21+54+29+39+69+28+35+63+49,
+$Q10_1/9+11+19+21+54,
+$Q10_1/29,
+$Q10_1/39+69,
+$Q10_1/28,
+$Q10_1/35,
+$Q10_1/63,
+$Q10_1/49,
+
+($Q10_1/7+16+25+40+41+42+46+51+56+58+50+2+17+74+20+33+47+24).($Q10_1notrelevance/B),
+($Q10_1/7+16+25+40+41+42+46+51+56+58+50).($Q10_1notrelevance/B),
+($Q10_1/2+17+74).($Q10_1notrelevance/B),
+($Q10_1/20+33+47).($Q10_1notrelevance/B),
+($Q10_1/24).($Q10_1notrelevance/B),
+
+$Q10_1/7+16+25+40+41+42+46+51+56+58+50+2+17+74+20+33+47+24,
+$Q10_1/7+16+25+40+41+42+46+51+56+58+50,
+$Q10_1/2+17+74,
+$Q10_1/20+33+47,
+$Q10_1/24,
+
+$Q10_1/1+6+8+10+48+57+61,
+$Q10_1/1+6+8+10+48+57+61,
+
+$Q10_1/37+43+5+14+34+52+53+65+68,
+$Q10_1/37,
+$Q10_1/43,
+$Q10_1/5,
+$Q10_1/14+34+52+53+65+68,
+
+$Q10_1/3+4+12+59,
+$Q10_1/3+4,
+$Q10_1/12+59,
+
+
+$Q10_1/18+22+23+26+27+30+31+32+36+38+44+45+70+55+71+60+62+64+66+72+73+75,
+$Q10_1/18,
+$Q10_1/22,
+$Q10_1/23,
+$Q10_1/26,
+$Q10_1/27,
+$Q10_1/30,
+$Q10_1/31,
+$Q10_1/32,
+$Q10_1/36,
+$Q10_1/38,
+$Q10_1/44,
+$Q10_1/45+70,
+$Q10_1/55+71,
+$Q10_1/60,
+$Q10_1/62,
+$Q10_1/64,
+$Q10_1/66,
+$Q10_1/72,
+$Q10_1/73,
+$Q10_1/75,
+
+
+$Q10_1/9999,
+R,F,
+XT = "Q10.1. REASONS FOR BEING A REJECTOR",
+X = "
+<G1B>Other family members have GCash;
+No time for that;
+TRUST-RELATED CONCERNS EXCLUSIVE (NET) <Q>;
+<G2B><G1P>`    Fear of Scam/ Fear of loss of money;
+<G1P>`    Not safe;
+<G1P>`    Not Secure because of certain issue;
+<G1P>`    I don't want online apps transaction because Im not sure if its legit;
+<G1P>`    I don't trust online apps;
+<G1P>`    The account may be hacked;
+<G2E><G1P>`    Need to be careful;
+
+TRUST-RELATED CONCERNS (NET) <Q>;
+<G2B><G1P>`    Fear of Scam/ Fear of loss of money;
+<G1P>`    Not safe;
+<G1P>`    Not Secure because of certain issue;
+<G1P>`    I don't want online apps transaction because Im not sure if its legit;
+<G1P>`    I don't trust online apps;
+<G1P>`    The account may be hacked;
+<G2E><G1P>`    Need to be careful;
+
+RELEVANCE EXCLUSIVE (NET) <Q>;
+<G2B><G1P>`    Don't have use for it/ No money to fund e-wallet;
+<G1P>`    Better to use cash;
+<G1P>`    Underage/ Student;
+<G2E><G1P>`    Too old for this apps;
+
+RELEVANCE (NET) <Q>;
+<G2B><G1P>`    Don't have use for it/ No money to fund e-wallet;
+<G1P>`    Better to use cash;
+<G1P>`    Underage/ Student;
+<G2E><G1P>`    Too old for this apps;
+
+LACK OF KNOWLEDGE (NET) <Q>;
+<G1B>Do not know how to use fintech;
+
+REQUIREMENTS AND REGISTRATION PROCESS (NET) <Q>;
+<G2B><G1P>`    Do not know how to register;
+<G1P>`    Difficult to register;
+<G1P>`    No valid ID;
+<G2E><G1P>`    Tedious process to download/ use;
+
+<G1E>INVOLUNTARY EXCLUSION (NET) <Q>;
+<G2B><G1P>`    Do not have own phone/ smartphone;
+<G2E><G1P>`    No stable/ reliable internet;
+
+
+OTHERS (NET) <Q>;
+`    I can't always monitor without deduction;
+`    Full storage cant download the apps;
+`    Lots of negative comments about fintech;
+`    No account;
+`    I don't want to use a lot;
+`    Difficult to use if without load;
+`    Experience badly to my account;
+`    Has hidden charges;
+`    Could cause online gaming addiction;
+`    Not comfortable to use e-wallet;
+`    Inaccessible outlets  to cash in/ cash out;
+`    Under maintenance;
+`    E wallets have no plan;
+`    I'm just curious because no one has offered;
+`    Sometimes my transactions are wrong;
+`    Because there is no experience even gcash;
+`    I am not interested in online transactions;
+`    I don't know how to save money;
+`    I feel that online is only for lazy people;
+`    Do not know how to use gadget;
+
+
+None;
+
+Missing Answer<z>;
+Total Count<C>",
+
+
+DM $TA_Q10_1newNoTrust=
+$A_Q10_1new/9+10+1039+1040+1020+11+16+
+$A_Q10_1new/9+
+$A_Q10_1new/10+1039+1040+1020+
+$A_Q10_1new/11+
+$A_Q10_1new/16+
+
+$A_Q10_1new/5+1031+1022+6+
+$A_Q10_1new/5+1031+1022+
+$A_Q10_1new/6+
+
+$A_Q10_1new/7+1055+1057+8+15+
+$A_Q10_1new/7+1055+1057+
+$A_Q10_1new/8+
+$A_Q10_1new/15+
+
+$A_Q10_1new/12+1033+1054+13+1041+1052+14+1043+8+
+$A_Q10_1new/12+1033+1054+
+$A_Q10_1new/13+1041+1052+
+$A_Q10_1new/14+1043+
+$A_Q10_1new/8+
+
+$A_Q10_1new/17+
+$A_Q10_1new/18+
+
+$A_Q10_1new/1030+
+$A_Q10_1new/1032+
+$A_Q10_1new/1034+
+$A_Q10_1new/1035+
+$A_Q10_1new/1037+
+$A_Q10_1new/1038+
+$A_Q10_1new/1042+1021+1023+
+$A_Q10_1new/1045+
+$A_Q10_1new/1046+
+$A_Q10_1new/1047+
+$A_Q10_1new/1048+
+$A_Q10_1new/1049+
+$A_Q10_1new/1050+
+$A_Q10_1new/1053+
+$A_Q10_1new/1056,
+
+
+DM $TA_Q10_1newNoRelevance=
+$A_Q10_1new/1+1036+2+1051+3+4+1058+
+$A_Q10_1new/1+1036+
+$A_Q10_1new/2+1051+
+$A_Q10_1new/3+
+$A_Q10_1new/4+1058+
+
+$A_Q10_1new/5+1031+1022+6+
+$A_Q10_1new/5+1031+1022+
+$A_Q10_1new/6+
+
+$A_Q10_1new/7+1055+1057+8+15+
+$A_Q10_1new/7+1055+1057+
+$A_Q10_1new/8+
+$A_Q10_1new/15+
+
+$A_Q10_1new/12+1033+1054+13+1041+1052+14+1043+8+
+$A_Q10_1new/12+1033+1054+
+$A_Q10_1new/13+1041+1052+
+$A_Q10_1new/14+1043+
+$A_Q10_1new/8+
+
+$A_Q10_1new/17+
+$A_Q10_1new/18+
+
+$A_Q10_1new/1030+
+$A_Q10_1new/1032+
+$A_Q10_1new/1034+
+$A_Q10_1new/1035+
+$A_Q10_1new/1037+
+$A_Q10_1new/1038+
+$A_Q10_1new/1042+
+$A_Q10_1new/1045+1021+1023+
+$A_Q10_1new/1046+
+$A_Q10_1new/1047+
+$A_Q10_1new/1048+
+$A_Q10_1new/1049+
+$A_Q10_1new/1050+
+$A_Q10_1new/1053+
+$A_Q10_1new/1056,
+
+DM $TA_Q10_1new =
+$A_Q10_1new/1+1036+2+1051+3+4+1058,
+$A_Q10_1new/1+1036,
+$A_Q10_1new/2+1051,
+$A_Q10_1new/3,
+$A_Q10_1new/4+1058,
+
+$A_Q10_1new/9+10+1039+1040+1020+11+16,
+$A_Q10_1new/9,
+$A_Q10_1new/10+1039+1040+1020,
+$A_Q10_1new/11,
+$A_Q10_1new/16,
+
+$A_Q10_1new/5+1031+1022+6,
+$A_Q10_1new/5+1031+1022,
+$A_Q10_1new/6,
+
+$A_Q10_1new/7+1055+1057+8+15,
+$A_Q10_1new/7+1055+1057,
+$A_Q10_1new/8,
+$A_Q10_1new/15,
+
+$A_Q10_1new/12+1033+1054+13+1041+1052+14+1043+8,
+$A_Q10_1new/12+1033+1054,
+$A_Q10_1new/13+1041+1052,
+$A_Q10_1new/14+1043,
+$A_Q10_1new/8,
+
+($A_Q10_1new/1+1036+2+1051+3+4+1058).($TA_Q10_1newNoTrust/B),
+($A_Q10_1new/1+1036).($TA_Q10_1newNoTrust/B),
+($A_Q10_1new/2+1051).($TA_Q10_1newNoTrust/B),
+($A_Q10_1new/3).($TA_Q10_1newNoTrust/B),
+($A_Q10_1new/4+1058).($TA_Q10_1newNoTrust/B),
+
+($A_Q10_1new/9+10+1039+1040+1020+11+16).($TA_Q10_1newNoRelevance/B),
+($A_Q10_1new/9).($TA_Q10_1newNoRelevance/B),
+($A_Q10_1new/10+1039+1040+1020).($TA_Q10_1newNoRelevance/B),
+($A_Q10_1new/11).($TA_Q10_1newNoRelevance/B),
+($A_Q10_1new/16).($TA_Q10_1newNoRelevance/B),
+
+$A_Q10_1new/17,
+$A_Q10_1new/18,
+
+$A_Q10_1new/1030,
+$A_Q10_1new/1032,
+$A_Q10_1new/1034,
+$A_Q10_1new/1035,
+$A_Q10_1new/1037,
+$A_Q10_1new/1038,
+$A_Q10_1new/1042,
+$A_Q10_1new/1045+1021+1023,
+$A_Q10_1new/1046,
+$A_Q10_1new/1047,
+$A_Q10_1new/1048,
+$A_Q10_1new/1049,
+$A_Q10_1new/1050,
+$A_Q10_1new/1053,
+$A_Q10_1new/1056,
+R,F,
+VT = "Q10.1. REASONS FOR BEING A REJECTOR",
+V = "
+TRUST-RELATED CONCERNS NET <Q>;
+`     I am afraid to be scammed;
+`     I am afraid to lose my money;
+`     I think it is not safe and secured;
+`     I don't trust e-wallet//fintech and online apps;
+
+RELEVANCE NET <Q>;
+`     I do not have any use for e-wallet/ fintech;
+`     I do not have money to fund it;
+`     I don't receive money from anyone;
+`     It is better to use cash;
+
+LACK OF KNOWLEDGE NET <Q>;
+`     I do not know how to use e-wallet/ fintech app;
+`     I do not know how to register or create an account in e-wallet/ fintech;
+
+REGISTRATION AND DOCUMENTARY REQUIREMENTS NET <Q>;
+`     It is tedious and complicated to download and register;
+`     It is tedious and complicated to use;
+`     I do not have valid ID;
+
+INVOLUNTARY EXCLUSION NET <Q>;
+`     I do not have my own mobile phone;
+`     I do not have a smartphone;
+`     I do not have stable/ reliable internet;
+`     It is tedious and complicated to use;
+
+
+TRUST-RELATED CONCERNS NET (EXCLUSIVE) <Q>;
+`     I am afraid to be scammed;
+`     I am afraid to lose my money;
+`     I think it is not safe and secured;
+`     I don't trust e-wallet//fintech and online apps;
+
+RELEVANCE NET (EXCLUSIVE) <Q>;
+`     I do not have any use for e-wallet/ fintech;
+`     I do not have money to fund it;
+`     I don't receive money from anyone;
+`     It is better to use cash;
+
+I already have a family member who use GCash e-wallet/ fintech;
+Inaccessible outlets  to cash in/ cash out;
+
+I'm not updated or I'm not interesed;
+I am too old to use e-wallet/fintech;
+Heard negative feedback;
+More comfortable to use cash. E-wallet app always need to be updated;
+Expensive charge for Cash out / Cash in;
+Difficult to use because there is no connection or data outside;
+Under age;
+I have lost money on Gcash;
+Slow transactions;
+No receipt is given;
+Don't have simcard;
+There is no need because my children use wallet;
+Mabusisi;
+My parents won't allow me to have an EWALLET;
+Afraid of engaged in online games;
+
+
+Missing Answer<z>;
+Total Count<C>",
+
+
+DM $HATL =
+T,
+$Q42022/NB,
+$Q12023/NB,
+$Q22023/NB,
+$Q32023/NB,
+$Q42023/NB,
+$Q12024/NB,
+$Q22024/NB,
+[*DO A = 1:12]
+T,
+$HAv/[A].$Q42022/NB,
+$HAv/[A].$Q12023/NB,
+$HAv/[A].$Q22023/NB,
+$HAv/[A].$Q32023/NB,
+$HAv/[A].$Q42023/NB,
+$HAv/[A].$Q12024/NB,
+$HAv/[A].$Q22024/NB,
+[*END A]
+HT = "HEADER A. GENERAL PROFILE",
+H  = "
+TOTAL*(a);
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+GENDER****
+MALE***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+FEMALE***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+LIFESTAGE****
+Students (20 yo and below)***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+Yuppies (21-30 yo)***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+Transitioners (31-35 yo)***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+Balancers (36-45 yo)***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+Older Adults/Retirees (46-65 yo)***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+
+SEC****
+AB***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+C1***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+ABC1***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+C2***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+D***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h)",
+
+
+DM $HBTL =
+T,
+$Q42022/NB,
+$Q12023/NB,
+$Q22023/NB,
+$Q32023/NB,
+$Q42023/NB,
+$Q12024/NB,
+$Q22024/NB,
+[*DO A = 1:15]
+T,
+$HBv/[A].$Q42022/NB,
+$HBv/[A].$Q12023/NB,
+$HBv/[A].$Q22023/NB,
+$HBv/[A].$Q32023/NB,
+$HBv/[A].$Q42023/NB,
+$HBv/[A].$Q12024/NB,
+$HBv/[A].$Q22024/NB,
+[*END A]
+HT = "HEADER B. LOCALE AND MACROREGION",
+H  = "
+TOTAL*(a);
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+LOCALE****
+URBAN (NET)***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+RURAL (NET)***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+
+NCR (NET)***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+
+NORTH CENTRAL LUZON****
+NCL (NET)***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+NCL Urban***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+NCL Rural***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+
+SOUTH LUZON****
+SL (NET)***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+SL Urban***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+SL Rural***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+
+VISAYAS****
+Visayas (NET)***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+Visayas Urban***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+Visayas Rural***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+
+MINDANAO****
+Mindanao (NET)***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+Mindanao Urban***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+Mindanao Rural***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h)",
+
+
+DM $HDTL =
+T,
+$Q42022/NB,
+$Q12023/NB,
+$Q22023/NB,
+$Q32023/NB,
+$Q42023/NB,
+$Q12024/NB,
+$Q22024/NB,
+[*DO A = 1:15]
+T,
+$HDv/[A].$Q42022/NB,
+$HDv/[A].$Q12023/NB,
+$HDv/[A].$Q22023/NB,
+$HDv/[A].$Q32023/NB,
+$HDv/[A].$Q42023/NB,
+$HDv/[A].$Q12024/NB,
+$HDv/[A].$Q22024/NB,
+[*END A]
+
+HT = "HEADER D. MACROREGION X SEC",
+H  = "
+TOTAL*(a);
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+MMA****
+ABC1***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+C2***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+D***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+NCL****
+ABC1***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+C2***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+D***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+SL****
+ABC1***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+C2***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+D***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+VISAYAS****
+ABC1***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+C2***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+D***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+MINDANAO****
+ABC1***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+C2***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+D***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h)",
+
+
+DM $HFTL =
+T,
+$Q42022/NB,
+$Q12023/NB,
+$Q22023/NB,
+$Q32023/NB,
+$Q42023/NB,
+$Q12024/NB,
+$Q22024/NB,
+[*DO A = 1:10]
+T,
+$HFv/[A].$Q42022/NB,
+$HFv/[A].$Q12023/NB,
+$HFv/[A].$Q22023/NB,
+$HFv/[A].$Q32023/NB,
+$HFv/[A].$Q42023/NB,
+$HFv/[A].$Q12024/NB,
+$HFv/[A].$Q22024/NB,
+[*END A]
+
+HT = "HEADER F. MACROREGION X USERSHIP",
+H  = "
+TOTAL*(a);
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+MMA****
+USERS***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+NON-USERS***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+NCL****
+USERS***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+NON-USERS***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+SL****
+USERS***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+NON-USERS***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+VISAYAS****
+USERS***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+NON-USERS***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+
+MINDANAO****
+USERS***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h);
+NON-USERS***
+TOTAL*(a)<S>;
+Q4 2022 *(b);
+Q1 2023 *(c);
+Q2 2023 *(d);
+Q3 2023 *(e);
+Q4 2023 *(f);
+Q1 2024 *(g);
+Q2 2024 *(h)
+",
+
+
+DM $NewClientHeaderv2 = 
+T,
+($SEC19/4).($T_Q1_1/22..65).($A_Q187new/1+2+11+4),
+($SEC19/4).($T_Q1_1/22..65).($A_Q187new/1+2+11),
+($SEC19/4).($T_Q1_1/22..65).($A_Q187new/4),
+($SEC19/3+4).($T_Q1_1/13..21),
+($SEC19/1+2).($T_Q1_1/22..35),
+HT = "NEW CLIENT HEADER V2",
+H = "<F=SHG-1>
+Total *(a);
+Mass Market (Total) *(b);
+Mass Market (Earner) *(c);
+Mass Market (Budgeter) *(d);
+Youth *(e);
+Mass Affluent *(f)",
+
+
+
+!-----------MultipleTopics15
+
+DM $T_QCH4_1 = $38990/1-9,'0',
+DM $T_QCH4_2 = $38991/1-9,'0',
+DM $T_QCH4_3 = $38992/1-9,'0',
+DM $T_QCH4_4 = $38993/1-9,'0',
+DM $T_QCH4_5 = $38994/1-9,'0',
+DM $T_QCH4_6 = $38995/1-9,'0',
+DM $T_QCH4_7 = $38996/1-9,'0',
+DM $T_QCH4_8 = $38997/1-9,'0',
+DM $T_QCH4_9 = $38998/1-9,'0',
+DM $T_QCH4_10 = $38999/1-9,'0',
+DM $T_QCH4_11 = $39000/1-9,'0',
+DM $T_QCH4_12 = $39001/1-9,'0',
+DM $T_QCH4_13 = $39002/1-9,'0',
+DM $T_QCH4_14 = $39003/1-9,'0',
+DM $T_QCH4_15 = $39004/1-9,'0',
+
+
+
+!-----------MultipleTopics25
+
+DM $T_QCH4a_1 = $39005/1-9,'0',
+DM $T_QCH4a_2 = $39006/1-9,'0',
+DM $T_QCH4a_3 = $39007/1-9,'0',
+DM $T_QCH4a_4 = $39008/1-9,'0',
+DM $T_QCH4a_5 = $39009/1-9,'0',
+DM $T_QCH4a_6 = $39010/1-9,'0',
+DM $T_QCH4a_7 = $39011/1-9,'0',
+DM $T_QCH4a_8 = $39012/1-9,'0',
+DM $T_QCH4a_9 = $39013/1-9,'0',
+DM $T_QCH4a_10 = $39014/1-9,'0',
+DM $T_QCH4a_11 = $39015/1-9,'0',
+DM $T_QCH4a_12 = $39016/1-9,'0',
+DM $T_QCH4a_13 = $39017/1-9,'0',
+DM $T_QCH4a_14 = $39018/1-9,'0',
+DM $T_QCH4a_15 = $39019/1-9,'0',
+DM $T_QCH4a_16 = $39020/1-9,'0',
+DM $T_QCH4a_17 = $39021/1-9,'0',
+DM $T_QCH4a_18 = $39022/1-9,'0',
+DM $T_QCH4a_19 = $39023/1-9,'0',
+DM $T_QCH4a_20 = $39024/1-9,'0',
+DM $T_QCH4a_21 = $39025/1-9,'0',
+DM $T_QCH4a_22 = $39026/1-9,'0',
+DM $T_QCH4a_23 = $39027/1-9,'0',
+DM $T_QCH4a_24 = $39028/1-9,'0',
+DM $T_QCH4a_25 = $39029/1-9,'0',
+
+DI $QHH1 = $47260-47263,
+DI $T_QHHS_1 = $23953-23955,
+DI $T_QHHS_2 = $23956-23958,
+
+
+
+!=======================MultipleTopics25
+
+[*SET s = 0]
+[*DATA topic4 (;) = 
+Concerns with hacking and data breaches;
+Fears of loss of money;
+Fears surrounding fraud;
+Fear of being scammed;
+Not safe and secured;
+Mistrust on e-wallet/ fintech and online apps;
+Long delay in resolving issues;
+Negative experiences of friends;
+Doubts with capability of the financial app to provide strong security for my account;
+No available channels or sources to learn how to use the financial app;
+Negative feedback regarding customer service;
+Inaccessible outlets to cash in/ cash out;
+No reliable means to request for refund;
+It is tedious and complicated to download and register;
+Uncertainty of transactions;
+Do not know how to use e-wallet/ fintech app;
+Do not know how to register or create an account in e-wallet/ fintech;
+Lack of knowledge on the different features of e-wallet/ fintech;
+Has service charge/fee to do different transactions (e.g., buy load, money transfer or banks or other apps etc);
+Do not have a personal smartphone to use e-wallet or fintech apps;
+No stable/ reliable internet connection;
+No valid ID to create an account;
+Fear of hidden charges;
+Has cash-in fee every time I fund my account;
+It is tedious and complicated to use]
+
+[*FOR A = 1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18:19:20:21:22:23:24:25]
+DM $TQCH4a_[A] =
+$T_QCH4a_[A]/
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+R,F,
+VT = "QCH4a. CONCERNS ABOUT CATEGORY - [topic4.[+s]]",
+V = "
+1 - Not a concern for me;
+2;
+3;
+4;
+5;
+6;
+7 -A serious concern for me;
+Missing answers<Z>;
+Total count<C>",
+[*END A]
+
+[*SET s = 0]
+DM $TQCH4a_TB =
+[*FOR A = 1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18:19:20:21:22:23:24:25]
+$T_QCH4a_[A]/7,
+[*END A]
+VT = "QCH4a. CONCERNS ABOUT CATEGORY - TOP BOX SUMMARY",
+V = "
+[*FOR A = 1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18:19:20:21:22:23:24:25]
+[topic4.[+s]][*SLE];
+[*END A]",
+
+[*SET s = 0]
+DM $TQCH4a_T2B =
+[*FOR A = 1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18:19:20:21:22:23:24:25]
+$T_QCH4a_[A]/6+7,
+[*END A]
+VT = "QCH4a. CONCERNS ABOUT CATEGORY - TOP 2 BOX SUMMARY",
+V = "
+[*FOR A = 1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18:19:20:21:22:23:24:25]
+[topic4.[+s]][*SLE];
+[*END A]",
+
+[*SET s = 0]
+DM $TQCH4a_T3B =
+[*FOR A = 1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18:19:20:21:22:23:24:25]
+$T_QCH4a_[A]/5+6+7,
+[*END A]
+VT = "QCH4a. CONCERNS ABOUT CATEGORY - TOP 3 BOX SUMMARY",
+V = "
+[*FOR A = 1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18:19:20:21:22:23:24:25]
+[topic4.[+s]][*SLE];
+[*END A]",
+
+
+!
+DM $TQHH1 = $QHH1/0-100,R,F,
+VT = "QHH1. NUMBER OF HOUSEHOLD MEMBERS WITH EXISTING GCASH ACCOUNT",
+V = "
+0;
+[*DO b = 1:100] 
+[b]<v[b]>;
+[*END b]
+Missing answers<Z>;
+Total count<C>",
+
+!
+[*data hhs1 = (;)
+Total Number of people living in household;
+Total Number of adults (18 yrs old up) living in household, excluding household help and/or driver]
+[*do a = 1:2]
+DM $TQHHS_[a] = $T_QHHS_[a]/0-100,R,F,
+VT = "QHHS. HOUSEHOLD SIZE",
+V = "
+0;
+[*DO b = 1:100] 
+[b]<v[b]>;
+[*END b]
+Missing answers<Z>;
+Total count<C>",
+[*end a]
+
+
+
+
+!=======================MultiSelect
+
+DM $TQGT1 =
+$A_QGT1/
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+91+92,
+99,
+R,F,
+VT = "QGT1. CHANNELS USED IF NEED TO DO TRANSACTIONS VIA GCASH",
+V = "
+Use my family's GCash account/ Ask my family to do the transaction using their GCash account;
+Use my friend's GCash account/ Ask my friend to do the transaction using their GCash account;
+Use my coworker/ colleague's GCash account/ Ask my coworker/ colleagues to do the transaction using their GCash account;
+Go to nearby sari-sari stores where I can send/receive money via GCash;
+Go to nearby convenience/ drugstores/ supermarkets to cash in to GCash via Cash-In machines to send money/ to pay;
+Go to nearby convenience/ drugstores/ supermarkets/ pawnshops/ payment facilities to send/receive money/ to pay over-the-counter ;
+I am using another e-wallet/ fintech/ mobile or online banking app;
+Others;
+I don't need GCash to do any of my transactions;
+Missing answers<Z>;
+Total count<C>",
+
+
+!
+DM $TQGT2 = $A_QGT2/1+([*DO A = 91:92]$XQGT2_91_other/1025[*SLE]+[*END A]),
+$A_QGT2/2,
+$A_QGT2/3,
+$A_QGT2/4+([*DO A = 91:92]$XQGT2_91_other/1028[*SLE]+[*END A]),
+$A_QGT2/5,
+$A_QGT2/6,
+$A_QGT2/7+([*DO A = 91:92]$XQGT2_91_other/1023[*SLE]+[*END A]),
+([*DO A = 91:92]$XQGT2_91_other/1024[*SLE]+[*END A]),
+([*DO A = 91:92]$XQGT2_91_other/1026[*SLE]+[*END A]),
+([*DO A = 91:92]$XQGT2_91_other/1127[*SLE]+[*END A]),
+([*DO A = 91:92]$XQGT2_91_other/1022[*SLE]+[*END A]),
+
+$A_QGT2/99+([*DO A = 91:92]$XQGT2_91_other/1021[*SLE]+[*END A]),
+R,F,
+VT = "QGT2. CHANNELS USED IF NEED TO DO TRANSACTIONS VIA GCASH",
+V = "
+Use my family's GCash account/ Ask my family to do the transaction using their GCash account;
+Use my friend's GCash account/ Ask my friend to do the transaction using their GCash account;
+Use my coworker/ colleague's GCash account/ Ask my coworker/ colleagues to do the transaction using their GCash account;
+Go to nearby sari-sari stores where I can send/receive money via GCash;
+Go to nearby convenience/ drugstores/ supermarkets to cash in to GCash via Cash-In machines to send money/ to pay;
+Go to nearby convenience/ drugstores/ supermarkets/ pawnshops/ payment facilities to send/receive money/ to pay over-the-counter; 
+I am using another e-wallet/ fintech/ mobile or online banking app;
+I don't have yet Gcash;
+I Use Cash for payment;
+Sending money in Palawan;
+VAGUE (NET);
+
+I don't need GCash to do any of my transactions;
+Missing answers<Z>;
+Total count<C>",
+
+
+!=======================Unique
+
+DM $TQGT1b =
+$QGT1b/
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+91,
+R,F,
+VT = "QGT1b. WHEN LAST USED AND BORROWED GCASH ACCOUNT",
+V = "
+Today;
+Yesterday;
+3-4 days ago;
+Within the last week;
+Within the last two weeks;
+Within the last month;
+More than a month ago;
+Others;
+Missing answers<Z>;
+Total count<C>",
+
+
+!=======================MultiSelect
+
+DM $TQGT1c =
+$A_QGT1c/
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+R,F,
+VT = "QGT1c. TRANSACTIONS DONE IN GCASH",
+V = "
+Buy load;
+Send Money / Express send (via mobile number and QR);
+Pay via QR Code or Scan to Pay;
+Online payments using GCash (linked payment);
+GLife;
+A+ rewards;
+Pay bills;
+Receive Money (via mobile number and QR);
+Bank transfer;
+GCash Pera Outlet;
+GLoan;
+GCredit;
+GGives;
+Request Money;
+Missing answers<Z>;
+Total count<C>",
+
+
+
+DM $T_Q8b2_1 = $Blank/1-4,$230/1,$231/1,$232/1,$233/1,$234/1,$235/1,$Blank/11-98,$236/1,
+DM $T_Q8b2_2 = $Blank/1-4,$237/1,$238/1,$239/1,$240/1,$241/1,$242/1,$Blank/11-98,$243/1,
+DM $T_Q8b2_4 = $Blank/1-4,$244/1,$245/1,$246/1,$247/1,$248/1,$249/1,$Blank/11-98,$250/1,
+DM $T_Q8b2_9 = $Blank/1-4,$251/1,$252/1,$253/1,$254/1,$255/1,$256/1,$Blank/11-98,$257/1,
+DM $T_Q8b2_10 = $Blank/1-4,$258/1,$259/1,$260/1,$261/1,$262/1,$263/1,$Blank/11-98,$264/1,
+DM $T_Q8b2_8 = $Blank/1-4,$265/1,$266/1,$267/1,$268/1,$269/1,$270/1,$Blank/11-98,$271/1,
+DM $T_Q8b2_11 = $Blank/1-4,$272/1,$273/1,$274/1,$275/1,$276/1,$277/1,$Blank/11-98,$278/1,
+DM $T_Q8b2_91 = $Blank/1-4,$279/1,$280/1,$281/1,$282/1,$283/1,$284/1,$Blank/11-98,$285/1,
+DM $T_Q8b2_92 = $Blank/1-4,$286/1,$287/1,$288/1,$289/1,$290/1,$291/1,$Blank/11-98,$292/1,
+DM $Q8d = $309/1-9,
+DM $T_Q8b1_1 = $Blank/1-4,$310/1,$311/1,$312/1,$313/1,$314/1,$315/1,$Blank/11-98,$316/1,
+DM $T_Q8b1_2 = $Blank/1-4,$317/1,$318/1,$319/1,$320/1,$321/1,$322/1,$Blank/11-98,$323/1,
+DM $T_Q8b1_4 = $Blank/1-4,$324/1,$325/1,$326/1,$327/1,$328/1,$329/1,$Blank/11-98,$330/1,
+DM $T_Q8b1_9 = $Blank/1-4,$331/1,$332/1,$333/1,$334/1,$335/1,$336/1,$Blank/11-98,$337/1,
+DM $T_Q8b1_10 = $Blank/1-4,$338/1,$339/1,$340/1,$341/1,$342/1,$343/1,$Blank/11-98,$344/1,
+DM $T_Q8b1_8 = $Blank/1-4,$345/1,$346/1,$347/1,$348/1,$349/1,$350/1,$Blank/11-98,$351/1,
+DM $T_Q8b1_11 = $Blank/1-4,$352/1,$353/1,$354/1,$355/1,$356/1,$357/1,$Blank/11-98,$358/1,
+DM $T_Q8b1_91 = $Blank/1-4,$359/1,$360/1,$361/1,$362/1,$363/1,$364/1,$Blank/11-98,$365/1,
+DM $T_Q8b1_92 = $Blank/1-4,$366/1,$367/1,$368/1,$369/1,$370/1,$371/1,$Blank/11-98,$372/1,
+DM $Q8f = $389/1-9,
+
+!=========
+[*DATA Q8B2 = 1,2,4,9,10,8,11,91,92]
+[*DATA Q8B2STUBS (;) = 
+Bought load;
+Payments for purchases from any store or establishments in-store or online;
+Pay bills;
+Send money for any purposes;
+Receive money for any purposes;
+Pay for transportation;
+Pay for subscriptions]
+
+[*DO A = 1:7]
+DM $TQ8b2R[A] = $T_Q8b2_[Q8B2.A]/
+7..10,7-10,
+5..6,5-6,
+99,R,F,
+VT = "Q8b2. GENERAL FINANCIAL TRANSACTIONS METHODS (P2M) - [Q8B2STUBS.A]",
+V = "
+NON-DIGITAL/ OFFLINE<Q>;
+`     Cash;
+`     Check;
+`     Debit Card;
+`     Credit Card;
+DIGITAL<Q>;
+`     eWallet;
+`     Mobile/Online Banking;
+DID NOT DO THIS TRANSACTION;
+Missing Answer<z>;
+Total Count<C>",
+[*END A]
+
+!=========
+DM $TQ8d = $Q8d/1-2,R,F,
+VT = "Q8d. P2M TRANSACTION INCIDENCE",
+V = "
+Did transaction in P2M;
+Did not do transaction in P2M;
+Missing Answer<z>;
+Total Count<C>",
+
+
+!=========
+[*DO A = 1:7]
+DM $TQ8b1R[A] = $T_Q8b1_[Q8B2.A]/
+7..10,7-10,
+5..6,5-6,
+99,R,F,
+VT = "Q8b1. GENERAL FINANCIAL TRANSACTIONS METHODS (P1M) - [Q8B2STUBS.A]",
+V = $TQ8b2R1,
+[*END A]
+
+
+!=========
+[*DO A = 1:7]
+ORDM $T_Q8b1_rgd = $T_Q8b1_[Q8B2.A],
+DM $TQ8b1R[A]rb = $T_Q8b1_[Q8B2.A]/
+7..10,7-10,
+5..6,5-6,
+99+R,F,
+VT = "Q8b1. GENERAL FINANCIAL TRANSACTIONS METHODS (P1M) - [Q8B2STUBS.A] - REBASED",
+V = "
+NON-DIGITAL/ OFFLINE<Q>;
+`     Cash;
+`     Check;
+`     Debit Card;
+`     Credit Card;
+DIGITAL<Q>;
+`     eWallet;
+`     Mobile/Online Banking;
+DID NOT DO THIS TRANSACTION;
+Total Count<C>",
+[*END A]
+
+
+
+[*SET Q8blen = Q8B2STUBS.#]
+[*DATA averageQ8btitle (;) = 
+NON-DIGITAL/ OFFLINE ONLY;
+TOTAL NON-DIGITAL/ OFFLINE;
+DIGITAL;
+DIGITAL ONLY;
+HYBRID (BOTH DIGITAL AND OFFLINE)]
+
+[*DO u = 1:2]
+[*DO A = 1:Q8blen]
+DM $Q8b[u]_total[Q8B2.A] = $T_Q8b[u]_[Q8B2.A]/5..10,
+DM $Q8b[u]_offlineonly[Q8B2.A] = ($T_Q8b[u]_[Q8B2.A]/7+8+9+10).N($T_Q8b[u]_[Q8B2.A]/5+6),
+DM $Q8b[u]_digitalonly[Q8B2.A] = N($T_Q8b[u]_[Q8B2.A]/7+8+9+10).($T_Q8b[u]_[Q8B2.A]/5+6),
+DM $Q8b[u]_hybrid[Q8B2.A] =  ($T_Q8b[u]_[Q8B2.A]/7+8+9+10).($T_Q8b[u]_[Q8B2.A]/5+6),
+
+OM $Q8b[u]_totalrgd = $Q8b[u]_total[Q8B2.A],
+OM $Q8b[u]_offlineonlyrgd = $Q8b[u]_offlineonly[Q8B2.A],
+OM $Q8b[u]_digitalonlyrgd = $Q8b[u]_digitalonly[Q8B2.A],
+OM $Q8b[u]_hybridrgd =  $Q8b[u]_hybrid[Q8B2.A],
+
+DM $TQ8b[u]_inci[A] = 
+$Q8b[u]_total[Q8B2.A]/NB,
+$Q8b[u]_offlineonly[Q8B2.A]/NB,
+$Q8b[u]_offlineonly[Q8B2.A]/NB+$Q8b[u]_hybrid[Q8B2.A]/NB,
+$Q8b[u]_digitalonly[Q8B2.A]/NB+$Q8b[u]_hybrid[Q8B2.A]/NB,
+$Q8b[u]_digitalonly[Q8B2.A]/NB,
+$Q8b[u]_hybrid[Q8B2.A]/NB,
+$Q8b[u]_total[Q8B2.A]/B,
+R,F,
+XT = "Q8b[u]. GENERAL FINANCIAL TRANSACTIONS METHODS (P[u]M) - INCIDENCE - [Q8B2STUBS.A]",
+X = "
+TOTAL INCIDENCE;
+NON-DIGITAL/ OFFLINE ONLY;
+TOTAL NON-DIGITAL/ OFFLINE;
+DIGITAL;
+`    DIGITAL ONLY;
+`    HYBRID (BOTH DIGITAL AND OFFLINE);
+DID NOT DO THIS TRANSACTION;
+Missing Answer<z>; 
+Total Count<c>",
+
+DM $TQ8b[u]_inci[A]rb = 
+$Q8b[u]_total[Q8B2.A]/NB,
+$Q8b[u]_offlineonly[Q8B2.A]/NB,
+$Q8b[u]_offlineonly[Q8B2.A]/NB+$Q8b[u]_hybrid[Q8B2.A]/NB,
+$Q8b[u]_digitalonly[Q8B2.A]/NB+$Q8b[u]_hybrid[Q8B2.A]/NB,
+$Q8b[u]_digitalonly[Q8B2.A]/NB,
+$Q8b[u]_hybrid[Q8B2.A]/NB,
+$Q8b[u]_total[Q8B2.A]/B+R,
+F,
+XT = "Q8b[u]. GENERAL FINANCIAL TRANSACTIONS METHODS (P[u]M) - INCIDENCE - [Q8B2STUBS.A] - REBASED",
+X = "
+TOTAL INCIDENCE;
+NON-DIGITAL/ OFFLINE ONLY;
+TOTAL NON-DIGITAL/ OFFLINE;
+DIGITAL;
+`    DIGITAL ONLY;
+`    HYBRID (BOTH DIGITAL AND OFFLINE);
+DID NOT DO THIS TRANSACTION;
+Total Count<c>",
+[*END A]
+
+
+
+DM $TQ8b[u]_inci_rb_RGD = 
+$Q8b[u]_totalrgd/NB,
+$Q8b[u]_offlineonlyrgd/NB,
+$Q8b[u]_offlineonlyrgd/NB+$Q8b[u]_hybridrgd/NB,
+$Q8b[u]_digitalonlyrgd/NB+$Q8b[u]_hybridrgd/NB,
+$Q8b[u]_digitalonlyrgd/NB,
+$Q8b[u]_hybridrgd/NB,
+$Q8b[u]_totalrgd/B+R,
+F,
+XT = "Q8b[u]. GENERAL FINANCIAL TRANSACTIONS METHODS (P[u]M) - INCIDENCE - REGARDLESS - REBASED",
+X = "
+TOTAL INCIDENCE;
+NON-DIGITAL/ OFFLINE ONLY;
+TOTAL NON-DIGITAL/ OFFLINE;
+DIGITAL;
+`    DIGITAL ONLY;
+`    HYBRID (BOTH DIGITAL AND OFFLINE);
+DID NOT DO THIS TRANSACTION;
+Total Count<c>",
+
+
+DM $Q8b[u]_RGD = 
+[*DO A = 1:Q8blen]
+$T_Q8b[u]_[Q8B2.A]/5..10,
+[*END A]
+
+DM $TQ8b[u]_count = 
+[*DO B = 1:Q8blen]
+CT($Q8b[u]_RGD)/[B],
+[*END B]
+F,
+XT = "Q8b[u]. Average # of transactions done in the P[u]M",
+X = "
+1 TRANSACTION ONLY <V1>;
+
+[*DO B = 2:Q8blen]
+[B] TRANSACTIONS <V[B]>;
+[*END B]
+Total Count<c>",
+
+[*DO D = 2:6]
+DM $TQ8b[u]_count[D] = 
+[*DO B = 1:Q8blen]
+(CT($Q8b[u]_RGD)/[B]).([*DO A = 1:Q8blen]$TQ8b[u]_inci[A]/[D][*SLE]+[*END A]),
+[*END B]
+F,
+XT = "Q8b[u]. Average # of transactions done in the P[u]M - [averageQ8btitle.[D-1]]",
+X = "
+1 TRANSACTION ONLY <V1>;
+
+[*DO B = 2:Q8blen]
+[B] TRANSACTIONS <V[B]>;
+[*END B]
+Total Count<c>",
+[*END D]
+
+
+
+[*DATA combicodes = 
+1,
+2,
+3,
+4,
+5,
+6,
+7]
+!combicodes are the number of codes in the variable, this are not the literal codes
+!we have 7 codes so i put 1,2,3,4,5,6,7 in the dataset
+ 
+
+ !WORKS ONLY UPTO 19!
+DM $TQ8b[u]_combi =
+ 
+[*DO R = 1:7]! [R] COMBINATION
+CT($Q8b[u]_RGD)/[R],
+[*DO A = 1:7]! code [A]
+[*DO B = [A]:7]
+[*DO C = [B]:7]
+[*DO D = [C]:7]
+[*DO E = [D]:7]
+[*DO F = [E]:7]
+[*DO G = [F]:7]
+ 
+[*BLOCK 2 ON R.EQ.1]
+[*BLOCK 1 ON A.EQ.B][*BLOCK 1 ON B.EQ.C][*BLOCK 1 ON C.EQ.D][*BLOCK 1 ON D.EQ.E][*BLOCK 1 ON E.EQ.F][*BLOCK 1 ON F.EQ.G]
+[*2]
+ 
+[*BLOCK 2 ON R.EQ.2]
+[*BLOCK 1 ON A.NE.B][*BLOCK 1 ON B.EQ.C][*BLOCK 1 ON C.EQ.D][*BLOCK 1 ON D.EQ.E][*BLOCK 1 ON E.EQ.F][*BLOCK 1 ON F.EQ.G]
+[*2]
+ 
+[*BLOCK 2 ON R.EQ.3]
+[*BLOCK 1 ON A.NE.B][*BLOCK 1 ON B.NE.C][*BLOCK 1 ON C.EQ.D][*BLOCK 1 ON D.EQ.E][*BLOCK 1 ON E.EQ.F][*BLOCK 1 ON F.EQ.G]
+[*2]
+ 
+[*BLOCK 2 ON R.EQ.4]
+[*BLOCK 1 ON A.NE.B][*BLOCK 1 ON B.NE.C][*BLOCK 1 ON C.NE.D][*BLOCK 1 ON D.EQ.E][*BLOCK 1 ON E.EQ.F][*BLOCK 1 ON F.EQ.G]
+[*2]
+ 
+[*BLOCK 2 ON R.EQ.5]
+[*BLOCK 1 ON A.NE.B][*BLOCK 1 ON B.NE.C][*BLOCK 1 ON C.NE.D][*BLOCK 1 ON D.NE.E][*BLOCK 1 ON E.EQ.F][*BLOCK 1 ON F.EQ.G]
+[*2]
+ 
+[*BLOCK 2 ON R.EQ.6]
+[*BLOCK 1 ON A.NE.B][*BLOCK 1 ON B.NE.C][*BLOCK 1 ON C.NE.D][*BLOCK 1 ON D.NE.E][*BLOCK 1 ON E.NE.F][*BLOCK 1 ON F.EQ.G]
+[*2]
+ 
+[*BLOCK 2 ON R.EQ.7]
+[*BLOCK 1 ON A.NE.B][*BLOCK 1 ON B.NE.C][*BLOCK 1 ON C.NE.D][*BLOCK 1 ON D.NE.E][*BLOCK 1 ON E.NE.F][*BLOCK 1 ON F.NE.G]
+[*2]
+CT($Q8b[u]_RGD)/[R].$Q8b[u]_RGD/([*DO Y = 1:[R]][combicodes.[~Y]][*SLE].[*END Y]),
+[*1]
+[*END G]
+[*END F]
+[*END E]
+[*END D]
+[*END C]
+[*END B]
+[*END A]
+[*END R]
+
+R,F,
+ 
+VT = "Q8B[u]. Combination data (Permutation of transactions) - P[u]M",
+V = "
+[*DO R = 1:7]
+COMBINATION [R]<Q>;
+[*DO A = 1:7]
+[*DO B = [A]:7]
+[*DO C = [B]:7]
+[*DO D = [C]:7]
+[*DO E = [D]:7]
+[*DO F = [E]:7]
+[*DO G = [F]:7]
+ 
+[*BLOCK 2 ON R.EQ.1]
+[*BLOCK 1 ON A.EQ.B][*BLOCK 1 ON B.EQ.C][*BLOCK 1 ON C.EQ.D][*BLOCK 1 ON D.EQ.E][*BLOCK 1 ON E.EQ.F][*BLOCK 1 ON F.EQ.G]
+[*2]
+ 
+[*BLOCK 2 ON R.EQ.2]
+[*BLOCK 1 ON A.NE.B][*BLOCK 1 ON B.EQ.C][*BLOCK 1 ON C.EQ.D][*BLOCK 1 ON D.EQ.E][*BLOCK 1 ON E.EQ.F][*BLOCK 1 ON F.EQ.G]
+[*2]
+ 
+[*BLOCK 2 ON R.EQ.3]
+[*BLOCK 1 ON A.NE.B][*BLOCK 1 ON B.NE.C][*BLOCK 1 ON C.EQ.D][*BLOCK 1 ON D.EQ.E][*BLOCK 1 ON E.EQ.F][*BLOCK 1 ON F.EQ.G]
+[*2]
+ 
+[*BLOCK 2 ON R.EQ.4]
+[*BLOCK 1 ON A.NE.B][*BLOCK 1 ON B.NE.C][*BLOCK 1 ON C.NE.D][*BLOCK 1 ON D.EQ.E][*BLOCK 1 ON E.EQ.F][*BLOCK 1 ON F.EQ.G]
+[*2]
+ 
+[*BLOCK 2 ON R.EQ.5]
+[*BLOCK 1 ON A.NE.B][*BLOCK 1 ON B.NE.C][*BLOCK 1 ON C.NE.D][*BLOCK 1 ON D.NE.E][*BLOCK 1 ON E.EQ.F][*BLOCK 1 ON F.EQ.G]
+[*2]
+ 
+[*BLOCK 2 ON R.EQ.6]
+[*BLOCK 1 ON A.NE.B][*BLOCK 1 ON B.NE.C][*BLOCK 1 ON C.NE.D][*BLOCK 1 ON D.NE.E][*BLOCK 1 ON E.NE.F][*BLOCK 1 ON F.EQ.G]
+[*2]
+ 
+[*BLOCK 2 ON R.EQ.7]
+[*BLOCK 1 ON A.NE.B][*BLOCK 1 ON B.NE.C][*BLOCK 1 ON C.NE.D][*BLOCK 1 ON D.NE.E][*BLOCK 1 ON E.NE.F][*BLOCK 1 ON F.NE.G]
+[*2]
+`     [*DO Y = 1:[R]][Q8B2STUBS.[~Y]][*SLE] + [*END Y];
+[*1]
+[*END G]
+[*END F]
+[*END E]
+[*END D]
+[*END C]
+[*END B]
+[*END A]
+[*END R]
+ 
+Missing answers<Z>;
+Total count<C>",
+[*END u]
+
+
+!=========
+DM $TQ8f = $Q8f/1-2,R,F,
+VT = "Q8f. P1M TRANSACTION INCIDENCE",
+V = "
+Did transaction in P1M;
+Did not do transaction in P1M;
+Missing Answer<z>;
+Total Count<C>",
+
+
+
+DM $Q191 = $24614/1-9,
+
+
+DM $HTargetMarket1Q187 =
+T,
+($SEC19/1..4).($T_Q1_1/13..20),
+($SEC19/3..4).($T_Q1_1/21..65),
+($SEC19/3..4).($T_Q1_1/21..65).($A_Q187new/1+2+11),
+($SEC19/3..4).($T_Q1_1/21..65).($A_Q187new/4),
+($SEC19/1+2).($T_Q1_1/21..65),
+($Q191/2),
+($A_Q187new/1),
+HT = "TARGET MARKET HEADER 1",
+H = "
+TOTAL *(a);
+YOUTH *(b);
+TOTAL MASS MARKET *(c);
+MASS MARKET EARNER *(d);
+MASS MARKET BUDGETER *(e);
+MASS AFFLUENT *(f);
+OFW DEPENDENTS *(g);
+INFORMAL SELLERS *(h)",
+  
+
+[*DATA TargetMarket (;)=
+TOTAL;
+YOUTH;
+TOTAL MASS MARKET;
+MASS MARKET EARNER;
+MASS MARKET BUDGETER;
+MASS AFFLUENT;
+OFW DEPENDENTS;
+INFORMAL SELLERS]
+
+DM $HTargetMarket1Q187T =
+T,
+($Q12024/NB),
+($Q22024/NB),
+($Q32024/NB),
+[*FOR A = 2:3:4:5:6:7]
+T,
+($HTargetMarket1Q187/[A]).($Q12024/NB),
+($HTargetMarket1Q187/[A]).($Q22024/NB),
+($HTargetMarket1Q187/[A]).($Q32024/NB),
+[*END A]
+HT = "TARGET MARKET HEADER 1",
+H = "
+TOTAL *(a);
+Q1 2024 *(b);
+Q2 2024 *(c);
+Q3 2024 *(d);
+[*FOR A = 2:3:4:5:6:7]
+[TargetMarket.A]***
+TOTAL*(a)<S>;
+Q1 2024 *(b);
+Q2 2024 *(c);
+Q3 2024 *(d)[*SLE];
+[*END A]",
+
+
+
+!-----------Unique
+DM $Q200 = $11/1-9,'0',
