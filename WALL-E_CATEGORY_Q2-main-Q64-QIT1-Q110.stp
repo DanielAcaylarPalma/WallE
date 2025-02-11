@@ -1,7 +1,9 @@
 START CONTROL,
 *PROJECT WALLE (DECEMBER 2, 2022)
 
-C = WALL_E_Q4_OCT.asc;WALLE_NOVEMBER.asc;WALLEDEC_1_10.asc;WALLE_JAN24V3.asc;WALLE_FEB24V2.asc;WALLE_MAR24V2.asc;WALLE_APR24V2.asc;WALLE_MAY24V2.asc;WALLE_JUN24V2.asc;WALLE_JUL24V2.ASC;WALLE_AUG24V2.ASC;WALLE_SEP24V2.ASC;WALLE_OCT24v2.ASC;WALLE_NOV24v2.ASC;WALLE_DEC24v2.ASC,
+!C = WALL_E_Q4_OCT.asc;WALLE_NOVEMBER.asc;WALLEDEC_1_10.asc;WALLE_JAN24V3.asc;WALLE_FEB24V2.asc;WALLE_MAR24V2.asc;WALLE_APR24V2.asc;WALLE_MAY24V2.asc;WALLE_JUN24V2.asc;WALLE_JUL24V2.ASC;WALLE_AUG24V2.ASC;WALLE_SEP24V2.ASC;WALLE_OCT24v2.ASC;WALLE_NOV24v2.ASC;WALLE_DEC24v2.ASC,
+
+C = WALLE_OCT24v2.ASC;WALLE_NOV24v2.ASC;WALLE_DEC24v2.ASC,
 !C = .asc,
 Y,
 OLDNAMES,
@@ -32,6 +34,9 @@ dm $QBHF1AUG = $1-10/39276058+39286878+39287899+39292843+39294709+39308371+39309
 [*INSERT W_WTS21to65]
 [*INSERT W_WTS]
 
+DM $A_QIT1 = $32946/1,$32947/1,$32948/1,$32949/1,$32950/1,$32951/1,$32952/1,$32953/1,$32954/1,$32955/1,$32956/1,$32957/1,$32958/1,$32959/1,$Blank/15-90,$32960/1,$Blank/92-98,$32961/1,
+DM $A_Q110 = $25570/1,$25571/1,$25572/1,
+
 DM $HT = T,
  HT = "TOTAL",
   H = "TOTAL*(A)",
@@ -41,6 +46,10 @@ $Q3/2+3+4+5,
 $Q3/6+7+8,
 $Q3/9+10+11,
 $Q3/12+13+14+15+16+17,
+
+DM $Q32024onwards = $Q32024/NB+$Q42024/NB,
+DM $Q42024onwards = $Q42024/NB,
+
 
 
 !IF (($Q42023/NB+$Q12024/NB+$Q22024/NB+$Booster/NB).($T_Q1_1/21..65))+
@@ -54,6 +63,7 @@ IF ($Q42023/NB+$Q12024/NB+$Q22024/NB+$Q32024/NB+$Q42024/NB), WRITE,
 FINISH DATA,
 START TABLES,
 %JH = 'PROJECT WALL E',  
+
 
 
 
@@ -83,7 +93,7 @@ F= SHG1/SIG1/SLA95/SLB95/NFSL, ! ROUND ROBIN
 %SDV = 'Standard Deviation<d2>',
 
 [*DATA HX = HA,HB,HC,HD]
-[*DATA HEADERWAVE3 = HATM,HBTM,HCTM,HAGCitiesT,HBGCitiesT]
+[*DATA HEADERWAVE3 = HAT,HBT,HCT,HAGCitiesT,HBGCitiesT]
 [*DATA HEADERWAVE3new = HA,HB,HC,HAGCities,HBGCities]
 
 
@@ -127,72 +137,67 @@ URBAN,
 RURAL]
 
 
+[*DATA Q110QIT1filter =
+$A_Q110/1+2,
+$A_QIT1/N99]
+
+[*DATA Q110QIT1filtername (;) =
+TRAVELLED IN THE P12M;
+TRAVELLED IN THE P6M]
+
+[*DATA filterQ64 = 
+($Q3/1+6+7+8+12+13+14+15+16+17).($SEC19/1..3),
+($Q3/1).($SEC19/1..3),
+($Q3/6+7+8).($SEC19/1..3),
+($Q3/1+6+7+8).($SEC19/1..3),
+($Q3/12+13+14+15+16+17).($SEC19/1..3),
+($Q3/1+6+7+8+12+13+14+15+16+17).($SEC19/1..2),
+($Q3/1+6+7+8+12+13+14+15+16+17).($SEC19/3)]
+
+[*DATA filterQ64name (;) = 
+Metro Manila, South Luzon, and Mindanao. ABC1 & C2, Yuppies to Older adults, and Working (self-employed and full-time employee);
+Metro Manila and ABC1 & C2, Yuppies to Older adults, and Working (self-employed and full-time employee);
+South Luzon and ABC1 & C2, Yuppies to Older adults, and Working (self-employed and full-time employee);
+Metro Manila and South Luzon and ABC1 & C2, Yuppies to Older adults, and Working (self-employed and full-time employee);
+Mindanao and ABC1 & C2, Yuppies to Older adults, and Working (self-employed and full-time employee);
+Metro Manila, South Luzon, and Mindanao, ABC1 only, Yuppies to Older adults, and Working (self-employed and full-time employee);
+Metro Manila, South Luzon, and Mindanao. C2 only, Yuppies to Older adults, and Working (self-employed and full-time employee)]
+
+
 SELECT WR $WTS,
 !SELECT WR $WTS21to65,
 
 [*SET T = 0]
 
 
-!======
-[*DO Z = 1:3]
-[*DO A = 1:7]
-T #[+T] = $TQ8b1_inci[A]rb * $[HEADERWAVE3.Z],
-BT = "ALL RESPONDENTS",
-[*END A]
-[*END Z]
 
-if $Q17i/1, then,
-!======
-[*DO Z = 1:3]
-[*DO A = 1:7]
-T #[+T] = $TQ8b1_inci[A]rb * $[HEADERWAVE3.Z],
-BT = "AMONG USERS OF FINTECH APPS",
-[*END A]
-[*END Z]
-end if,
-
-if $Q17i/2, then,
-!======
-[*DO Z = 1:3]
-[*DO A = 1:7]
-T #[+T] = $TQ8b1_inci[A]rb * $[HEADERWAVE3.Z],
-BT = "AMONG NON-USERS OF FINTECH APPS",
-[*END A]
-[*END Z]
-end if,
+[*DO Y = 1:7]
+IF ($F64/1..9).($Q42024/NB).($A_Q187new/1+2).($T_Q1_1/21..65).([filterQ64.Y]), THEN,
+T [+T] = $TQ64R1 * $HLADTMonth,
+VT = "Q64. BRAND ASSOCIATION Side-by-Side",
+BT = "Among aware of the brand - ([filterQ64name.Y]",
+[*SETS=0]
+[*FORA=5:7:1:2:3:4:6:8:9]
+IF ($F64/[A]), T # [T] = $TQ64R[a] * [+S],
+[*ENDA]
+END IF,
+[*END Y]
 
 
 
-
-!======
-[*DO Z = 1:3]
-[*DO A = 1:7]
-T #[+T] = $TQ8b1R[A]rb * $[HEADERWAVE3.Z],
-BT = "ALL RESPONDENTS",
-[*END A]
-[*END Z]
-
-if $Q17i/1, then,
-!======
-[*DO Z = 1:3]
-[*DO A = 1:7]
-T #[+T] = $TQ8b1R[A]rb * $[HEADERWAVE3.Z],
-BT = "AMONG USERS OF FINTECH APPS",
-[*END A]
-[*END Z]
-end if,
-
-
-if $Q17i/2, then,
-!======
-[*DO Z = 1:3]
-[*DO A = 1:7]
-T #[+T] = $TQ8b1R[A]rb * $[HEADERWAVE3.Z],
-BT = "AMONG NON-USERS OF FINTECH APPS",
-[*END A]
-[*END Z]
-end if,
-
+[*DO V = 1:2]
+[*DO Y = 1:7]
+IF ($F64/1..9).($Q42024/NB).($A_Q187new/1+2).($T_Q1_1/21..65).([filterQ64.Y]).([Q110QIT1filter.V]), THEN,
+T [+T] = $TQ64R1 * $HLADTMonth,
+VT = "Q64. BRAND ASSOCIATION Side-by-Side",
+BT = "Among aware of the brand - ([filterQ64name.Y] - [Q110QIT1filtername.V]",
+[*SETS=0]
+[*FORA=5:7:1:2:3:4:6:8:9]
+IF ($F64/[A]), T # [T] = $TQ64R[a] * [+S],
+[*ENDA]
+END IF,
+[*END Y]
+[*END V]
 
 
 

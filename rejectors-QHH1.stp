@@ -1,0 +1,145 @@
+START CONTROL,
+*PROJECT WALLE (DECEMBER 2, 2022)
+
+!C = ..\rejectdata\WALLE_APR24V2.ASC;..\rejectdata\WALLE_MAY24V2.ASC;..\rejectdata\WALLE_JUN24V2.ASC,
+!C = ..\WALLEDATA_12_04_2024\WALLE_JAN24V3.asc;..\WALLEDATA_12_04_2024\WALLE_FEB24V2.asc;..\WALLEDATA_12_04_2024\WALLE_MAR24V2.asc,
+!C = WALLE_JAN24V3.asc;WALLE_FEB24V2.asc;WALLE_MAR24V2.asc;WALLE_APR24V2.asc;WALLE_MAY24V2.asc;WALLE_JUN24V2.asc,
+!C = P_WALLE_2023Q1.ASC;P_WALLE_2023Q2.ASC;P_WALLE_2023Q3.ASC;WALL_E_Q4_OCT.asc;WALLE_NOVEMBER.asc;WALLEDEC_1_10.asc;WALLE_JAN24V2.asc;WALLE_FEB24V2.asc;WALLE_MAR24V2.asc,
+!C = P_WALLE_2023Q2.ASC;P_WALLE_2023Q3.ASC,
+!C = ..\rejectdata\P_WALLE_2023Q3_V2_PQ10.ASC;..\rejectdata\WALLE_Q3_JUL_INCIONLY_Q10F1_V2.ASC;..\rejectdata\WALLE_Q3_AUG_INCIONLY_Q10F1_V2.ASC;..\rejectdata\WALLE_Q3_SEP_INCIONLY_Q10F1_V2.ASC;..\rejectdata\WALLE_Q1_MAP1_INCI_ONLY_Q10F1_V2.ASC;..\rejectdata\WALLE_Q2_APR_TOTALV4_Q10F1_V2.ASC;..\rejectdata\WALLE_Q2_JUN_INCIBOS_Q10F1_V2.ASC;..\rejectdata\WALL_E_Q4_OCT.ASC;..\rejectdata\WALLE_NOVEMBER.ASC;..\rejectdata\WALLEDEC_1_10.ASC;..\rejectdata\WALLE_JAN24V3.asc;..\rejectdata\WALLE_FEB24V2.asc;..\rejectdata\WALLE_MAR24V2.ASC;..\rejectdata\WALLE_APR24V2.ASC;..\rejectdata\WALLE_MAY24V2.ASC;..\rejectdata\WALLE_JUN24V2.ASC,
+!C = ..\rejectdata\WALL_E_Q4_OCT.ASC;..\rejectdata\WALLE_NOVEMBER.ASC;..\rejectdata\WALLEDEC_1_10.ASC;..\rejectdata\WALLE_JAN24V3.asc;..\rejectdata\WALLE_FEB24V2.asc;..\rejectdata\WALLE_MAR24V2.ASC;..\rejectdata\WALLE_APR24V2.ASC;..\rejectdata\WALLE_MAY24V2.ASC;..\rejectdata\WALLE_JUN24V2.ASC,
+
+!C = WALL_E_Q4_OCT.asc;WALLE_NOVEMBER.asc;WALLEDEC_1_10.asc;WALLE_JAN24V3.asc;WALLE_FEB24V2.asc;WALLE_MAR24V2.asc;WALLE_APR24V2.asc;WALLE_MAY24V2.asc;WALLE_JUN24V2.asc;WALLE_JUL24V2.ASC;WALLE_AUG24V2.ASC;WALLE_SEP24V2.ASC;WALLE_OCT24V2.ASC;WALLE_NOV24V2.ASC;WALLE_DEC24V2.ASC,
+!C = WALLE_JAN24V3.asc;WALLE_FEB24V2.asc;WALLE_MAR24V2.asc;WALLE_APR24V2.asc;WALLE_MAY24V2.asc;WALLE_JUN24V2.asc;WALLE_JUL24V2.ASC;WALLE_AUG24V2.ASC;WALLE_SEP24V2.ASC;WALLE_OCT24V2.ASC;WALLE_NOV24V2.ASC;WALLE_DEC24V2.ASC,
+C = WALLE_OCT24V2.ASC;WALLE_NOV24V2.ASC;WALLE_DEC24V2.ASC,
+
+Y,
+OLDNAMES,
+CSV2R,
+TERSE,
+FINISH CONTROL,
+START DATA,
+ORDER 1234567890XV,
+SERIAL NUMBER IN COLUMNS 1-10,
+CARD CHARACTERS BINARY 300000,
+TEMPORARY/9999999/,
+
+F=ADF,
+DI $resp = $1-10,
+di $blank = 0,
+
+DI $Q17i = 0,
+DI $A_Q17c = 0,
+
+[*INSERT WallE_resprejector]
+[*INSERT WALLE_resprejectornew]
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+UL $NewQuarter/NB, goto @Q32023,
+[*INSERT Rejectors-StubsNew]
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+IF $NewQuarter/NB, goto @end,
+@Q32023,
+[*INSERT Rejectors-StubsOld]
+@end,
+
+
+[*INSERT W_HEADER]
+[*INSERT Rejectors-Stubs]
+!INSERT Rejectors-CK
+
+IF ($Q12023/NB+$Apr2023Inci/NB+$Jun2023Inci/NB+$JUL2023inci/NB+$AUG2023inci/NB+$SEP2023inci/NB+($NewQuarter/NB.$Q200/1)).($TQ10/2),  WRITE,
+
+
+FINISH DATA,
+START TABLES,
+%JH = 'PROJECT WALL E',  
+
+
+
+
+!======FOR QPS WINDOWS (% + raw - for datachecking)
+ 
+F= CTU'='/CAZ'-'/CZP'-'/SDV/UCH/NPGN/NPTC/TID/RLW40/LBB1/TOC/SPL250/CNZ'*'/URS/
+PCS/PRC/LPP55/SER/CLG1/RNC1/DAT/BAL/RBL/CLW7/PBL/MOD/MED,
+ 
+!F=MCB29,        ! ------ Less than 30 base
+F=BTS,          ! ------ Blank Tables Suppress - standard
+F=BCS,          ! ------ Blank Column Suppress - standard
+F=DPR4,          ! ------ Decimal % - standard
+F=DPT0,          ! ------ Decimal Raw Count
+F=DPA2,          ! ------ Decimal Mean Sum
+F=DPS2,          ! ------ Decimal Std
+F=BRS,          ! ------ Blank Row Suppress - kindly edit based on tabspecs
+
+
+F= SHG1/SIG1/SLA95/SLB95/BRS/NFSL, ! standard by segment
+
+!F= SHG-1/SIG1/SLA95/SLB95/NFSL, ! ROUND ROBIN
+
+
+%UNR = '(UNWEIGHTED BASE)',
+%AVG = 'Mean Score<d2>',
+%SDV = 'Standard Deviation<d2>',
+
+[*DATA HEADERWAVE3 = HAT,HBT]
+[*DATA HEADERWAVE3new = HA,HB]
+
+
+
+!
+[*DATA filters =
+$Q2/1,
+$Q2/2,
+$T_Q1_1/1..20,
+$T_Q1_1/21..30,
+$T_Q1_1/31..35,
+$T_Q1_1/36..45,
+$T_Q1_1/46..99,
+$SEC19/1..2,
+$SEC19/3,
+$SEC19/4,
+$Q3/1,
+($Q3/2+3+4+5),
+($Q3/6+7+8),
+($Q3/9+10+11),
+($Q3/12+13+14+15+16+17),
+$Q4/1,
+$Q4/2]
+
+[*DATA filtername =
+MALE,
+FEMALE,
+STUDENTS (20 yo and below),
+YUPPIES (21-30 yo),
+TRANSITIONERS (31-35 yo),
+BALANCERS (36-45 yo),
+OLDER ADULTS/RETIREES (46-65 yo),
+ABC1,
+C2,
+D,
+NCR,
+NCL,
+SL,
+VISAYAS,
+MINDANAO,
+URBAN,
+RURAL]
+
+! SELECT WR $WTS,
+
+[*SET T = 0]
+
+
+!====== NEW
+[*DO Y = 8:10]
+[*DO Z = 1:2]
+IF ($TQ10/2).($Q32024onwards/NB).([filters.Y]), T #[+T] = $TQHH1 * $[HEADERWAVE3new.Z],
+BT = "Among rejectors of fintech - [filtername.Y]",
+[*END Z]
+[*END Y]
+
+
+FINISH TABLES,
+

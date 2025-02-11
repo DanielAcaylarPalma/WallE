@@ -358,14 +358,20 @@ DIGITAL;
 DID NOT DO THIS TRANSACTION;
 Total Count<c>",
 
-
+!1st
 !DM $Q8b[u]_offlineonlyrgd2 = ($Q8b[u]_offlineonlyrgd/NB).N($Q8b[u]_digitalonlyrgd/NB+$Q8b[u]_hybridrgd/NB),
 !DM $Q8b[u]_digitalonlyrgd2 = ($Q8b[u]_digitalonlyrgd/NB).N($Q8b[u]_offlineonlyrgd/NB+$Q8b[u]_hybridrgd/NB),
 !DM $Q8b[u]_hybridrgd2 = N($Q8b[u]_offlineonlyrgd2/NB).N($Q8b[u]_digitalonlyrgd2/NB).($Q8b[u]_hybridrgd/NB),
 
-DM $Q8b[u]_offlineonlyrgd2 = ([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/7+8+9+10)[*SLE]+[*END A]).N([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/5+6)[*SLE]+[*END A]),
-DM $Q8b[u]_digitalonlyrgd2 = N([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/7+8+9+10)[*SLE]+[*END A]).([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/5+6)[*SLE]+[*END A]),
-DM $Q8b[u]_hybridrgd2 = ([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/7+8+9+10)[*SLE]+[*END A]).([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/5+6)[*SLE]+[*END A]),
+!2nd
+!DM $Q8b[u]_offlineonlyrgd2 = ([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/7+8+9+10)[*SLE]+[*END A]).N([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/5+6)[*SLE]+[*END A]),
+!DM $Q8b[u]_digitalonlyrgd2 = N([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/7+8+9+10)[*SLE]+[*END A]).([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/5+6)[*SLE]+[*END A]),
+!DM $Q8b[u]_hybridrgd2 = ([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/7+8+9+10)[*SLE]+[*END A]).([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/5+6)[*SLE]+[*END A]),
+
+!3rd
+DM $Q8b[u]_offlineonlyrgd2 = ([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/7+8+9+10)[*SLE]+[*END A]).($A_Q17c/99),
+DM $Q8b[u]_digitalonlyrgd2 = N([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/7+8+9+10)[*SLE]+[*END A]).N($A_Q17c/99),
+DM $Q8b[u]_hybridrgd2 = ([*DO A = 1:Q8blen]($T_Q8b[u]_[Q8B2.A]/7+8+9+10)[*SLE]+[*END A]).N($A_Q17c/99),
 
 DM $TQ8b[u]_inci_rb_RGD2 = 
 $Q8b[u]_totalrgd/NB,
@@ -407,6 +413,22 @@ X = "
 [B] TRANSACTIONS <V[B]>;
 [*END B]
 Total Count<c>",
+
+IF $T_Q8b1_rgd/5..6, THEN,
+DM $TQ8b[u]_count_digital = 
+[*DO B = 1:Q8blen]
+CT($Q8b[u]_RGD)/[B],
+[*END B]
+F,
+XT = "Q8b[u]. Average # of transactions done in the P[u]M - DIGITAL",
+X = "
+1 TRANSACTION ONLY <V1>;
+
+[*DO B = 2:Q8blen]
+[B] TRANSACTIONS <V[B]>;
+[*END B]
+Total Count<c>",
+END IF,
 
 [*DO D = 2:6]
 DM $TQ8b[u]_count[D] = 
@@ -7886,6 +7908,80 @@ R,F,
 VT = "Q195c. GCASH SERVICES USED IN THE PAST 4 WEEKS",
 V = $TQ194a, 
 
+
+
+DM $TQ195c_answers = 
+$A_Q195c/1+([*do a = 91:93]$Q195c_[a]_other/1001[*sle]+[*end a]),
+$A_Q195c/2+([*do a = 91:93]$Q195c_[a]_other/1002+1062+1076[*sle]+[*end a]),
+$A_Q195c/3,
+$A_Q195c/4,
+$A_Q195c/5,
+$A_Q195c/6,
+$A_Q195c/7+([*do a = 91:93]$Q195c_[a]_other/1007+1071[*sle]+[*end a]),
+$A_Q195c/8,
+$A_Q195c/9+([*do a = 91:93]$Q195c_[a]_other/1009[*sle]+[*end a]),
+$A_Q195c/21+([*do a = 91:93]$Q195c_[a]_other/2100[*sle]+[*end a]),
+$A_Q195c/11,
+$A_Q195c/12,
+$A_Q195c/13+([*do a = 91:93]$Q195c_[a]_other/1013[*sle]+[*end a]),
+$A_Q195c/14,
+$A_Q195c/15,
+$A_Q195c/16+([*do a = 91:93]$Q195c_[a]_other/1016[*sle]+[*end a]),
+$A_Q195c/17,
+$A_Q195c/18,
+$A_Q195c/19,
+$A_Q195c/20,
+$A_Q195c/22,
+$A_Q195c/23,
+$A_Q195c/24,
+$A_Q195c/25,
+$A_Q195c/26,
+([*do a = 91:93]$Q195c_[a]_other/1010[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1050+1051+1021[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1052[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1053[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1054[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1055[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1056[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1057[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1058[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1059[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1060[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1061[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1063[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1064[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1065[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1066[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1067[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1068[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1069[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1075[*sle]+[*end a]),
+([*do a = 91:93]$Q195c_[a]_other/1079[*sle]+[*end a]),
+
+
+DM $TQ195c_count = 
+
+[*DO B = 1:46]
+CT($TQ195c_answers)/[B],
+[*END B]
+
+([*do a = 91:93]$Q195c_[a]_other/1070+1072+1073+1074+1077+1078[*sle]+[*end a]),
+$A_Q195c/99+([*do a = 91:93]$Q195c_[a]_other/9999[*sle]+[*end a]),
+R,F,
+
+XT = "Q195c. - AVERAGE # of GCASH SERVICES USED IN THE PAST 4 WEEKS",
+X = "
+1 TRANSACTION ONLY <V1>;
+
+[*DO B = 2:46]
+[B] TRANSACTIONS <V[B]>;
+[*END B]
+
+
+VAGUE (NET);
+None;
+Missing Answer<z>;
+Total Count<C>", 
 
 
 !=========

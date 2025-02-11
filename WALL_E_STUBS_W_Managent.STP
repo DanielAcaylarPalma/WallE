@@ -220,8 +220,10 @@ $QSAV3_98_other/1044,
 $QSAV3_98_other/1045,
 $QSAV3_98_other/1046,
 $QSAV3_98_other/1049,
+$QSAV3_98_other/1051,
+$QSAV3_98_other/1052,
 
-$QSAV3_98_other/1033+1037+1040,
+$QSAV3_98_other/1033+1037+1040+1050,
 
 $QSAV3_98_other/9999,
 $QSAV3_98_other/9998,
@@ -264,6 +266,8 @@ China Bank;
 AUB;
 PNB;
 Sariaya Bank;
+Coin ph;
+PBB;
 
 VAGUE (NET);
 None;
@@ -770,8 +774,8 @@ INFORMAL LOANS NET,
 TRADITIONAL LOANS NET,
 DIGITAL LOANS NET]
 
-DM $TQ74a = $A_Q74a/1+2+3+4+5+6+7+8+9+10+11+12+30+13+14+15+16+40+41+42+43+17+18+19+20+31+21+22+23+24+34+25+35+26+36+37+32+27+($Q74A_OTHERS/1069+1057+1071+1070+1063+1064+1067+1077+1059+1065+1068+1073),
-$A_Q74a/1+2+3+4+5+6+7+8+9+10+11+12+($Q74A_OTHERS/1069+1057+1071+1170+1063+1064),
+DM $TQ74a = $A_Q74a/1+2+3+4+5+6+7+8+9+10+11+12+30+13+14+15+16+40+41+42+43+17+18+19+20+31+21+22+23+24+34+25+35+26+36+37+32+27+($Q74A_OTHERS/1069+1057+1071+1070+1063+1064+1095+1067+1077+1059+1065+1068+1073),
+$A_Q74a/1+2+3+4+5+6+7+8+9+10+11+12+($Q74A_OTHERS/1069+1057+1071+1170+1063+1064+1095),
 $A_Q74a/1+($Q74A_OTHERS/1069),
 $A_Q74a/2+($Q74A_OTHERS/1057),
 $A_Q74a/3,
@@ -786,14 +790,15 @@ $A_Q74a/11+($Q74A_OTHERS/1170),
 $A_Q74a/12,
 $Q74A_OTHERS/1063,
 $Q74A_OTHERS/1064,
+$Q74A_OTHERS/1095,
 
-$A_Q74a/13+14+15+16+40+41+42+43+17+18+19+20+($Q74A_OTHERS/1067),
+$A_Q74a/13+14+15+16+40+41+42+43+17+18+19+20+($Q74A_OTHERS/1067+1094),
 $A_Q74a/13,
 $A_Q74a/14,
 $A_Q74a/15,
 $A_Q74a/16,
 $A_Q74a/40,
-$A_Q74a/41,
+$A_Q74a/41+$Q74A_OTHERS/1094,
 $A_Q74a/42,
 $A_Q74a/43,
 $A_Q74a/17,
@@ -802,9 +807,9 @@ $A_Q74a/19,
 $A_Q74a/20,
 $Q74A_OTHERS/1067,
 
-$A_Q74a/21+22+23+24+34+($Q74A_OTHERS/1091),
+$A_Q74a/21+22+23+24+34+($Q74A_OTHERS/1091+1096),
 $A_Q74a/21,
-$A_Q74a/22,
+$A_Q74a/22+$Q74A_OTHERS/1096,
 $A_Q74a/23,
 $A_Q74a/24+($Q74A_OTHERS/1091),
 
@@ -873,6 +878,7 @@ FORMAL INSTITUTIONS (NET)<Q>;
 `          Unionbank;
 `          Lifebank;
 `          Card Inc;
+`          Legaspi Bank;
 
 `     Digital Brand (SUBNET)<Q>;
 `          Billease;
@@ -975,6 +981,7 @@ $Q159a_98_other/1053,
 
 $Q159A_OTHERS/1030+1032+1037+1043+1044+1045+1046+1052+1054+1055+1056+1057+1058+1059+1060+1061+1062+1064+1066+1067,
 
+$Q159A_OTHERS/9998,
 $Q159A_OTHERS/9999+1065+1068,
 R,F,
 VT = "Q159a. WHERE PAY EXISTING LOANS PAYMENT CHANNELS",
@@ -1005,6 +1012,7 @@ ONLINE/DIGITAL (NET)<Q>;
 `     SSS and PAG IBIG office;
 `     ASA Center;
 
+Don't Know;
 VAGUE;
 None;
 Missing Answer<z>;
@@ -1106,6 +1114,7 @@ $QLO3_OTHERS/1097,
 $QLO3_OTHERS/1098,
 $QLO3_OTHERS/1101,
 $QLO3_OTHERS/1103,
+$QLO3_OTHERS/1104,
 
 
 R,F,
@@ -1204,6 +1213,7 @@ Katipunan Bank;
 Rural Bank;
 Main office;
 Microfinance;
+Cooperative;
 
 Missing Answer<z>;
 Total Count<C>",
@@ -1426,7 +1436,7 @@ DM $T_Q170a_1_2_AC = $T_Q170a_1_2,
 DM $T_Q170a_1_3_AC = $T_Q170a_1_5 .OR. $T_Q170a_1_6 .OR. $T_Q170a_1_7 .OR. $T_Q170a_1_9,
 
 DM $T_Q170a_1_1_AC_Q170a_1_7_other = $T_Q170a_1_1_Q170a_1_7_other .OR. $T_Q170a_1_3_Q170a_1_7_other .OR. $T_Q170a_1_4_Q170a_1_7_other .OR. $T_Q170a_1_8_Q170a_1_7_other,
-DM $T_Q170a_1_2_AC_Q170a_1_7_other = $T_Q170a_1_2_Q170a_1_7_other,
+DM $T_Q170a_1_2_AC_Q170a_1_7_other = $T_Q170a_1_2_Q170a_1_7_other .or. $T_Q170a_1_2_Q170a_1_7_other,
 DM $T_Q170a_1_3_AC_Q170a_1_7_other = $T_Q170a_1_5_Q170a_1_7_other .OR. $T_Q170a_1_6_Q170a_1_7_other .OR. $T_Q170a_1_7_Q170a_1_7_other .OR. $T_Q170a_1_9_Q170a_1_7_other,
 
 !========= 
@@ -1537,9 +1547,9 @@ $A_QINV2/11..15,
 $A_QINV2/11,
 $A_QINV2/12,
 $A_QINV2/13,
-$A_QINV2/14,
+$A_QINV2/14+$QINV2_98_other/2001,
 $A_QINV2/15,
-$A_QINV2/98,
+$QINV2_98_other/9999,
  R,F,
 XT = "QINV2. TYPES OF INVESTMENTS CURENTLY HAVE",
 X = "
@@ -1562,7 +1572,7 @@ GOVERNMENT SECURITIES (NET)<Q>;
 `     Real Estate (e.g., house, land, condominium, etc.);
 `     Cryptocurrency (e.g. Bitcoin, Ethereum, etc)(virtual or digital money that takes the form of tokens or  coins.  While some cryptocurrencies have ventured into the physical world with credit cards or other projects, the large majority remain entirely intangible);
 `     Stockbroker/ Investment Firm (e.g. COL Financial, etc.);
-oTHERS;
+None;
 
 MISSING ANSWER<Z>;
 TOTAL COUNT<C>",
@@ -1585,6 +1595,7 @@ $T_Q175_[A]/3,
 $T_Q175_2_Q175_4_other/1020,
 $T_Q175_2_Q175_4_other/1021,
 $T_Q175_2_Q175_4_other/1022,
+$T_Q175_2_Q175_4_other/9999,
 R,F,
 XT = "Q175. HOW INVESTMENT PRODUCTS/SERVICES AVAILED - [Q175.A]",
 X = "
@@ -1595,7 +1606,7 @@ For tuition in college;
 Motor;
 
 VAGUE (NET);
-
+none;
 MISSING ANSWER<Z>;
 TOTAL COUNT<C>",
 [*END A]
@@ -1621,6 +1632,7 @@ $Q178_5_other/1048,
 $Q178_5_other/1053,
 
 $Q178_5_other/1030+1032+1037+1043+1044+1045+1046+1052+1054+1055+1056+1057+1058+1059+1060+1061+1062+1064+1066+1067,
+$Q178_5_other/9998,
 $Q178_5_other/9999+1065+1068,
 R,F,
 VT = "Q178. INVESTMENT PAYMENT CHANNELS",
@@ -1645,6 +1657,7 @@ SSS and PAG IBIG office;
 ASA Center;
 
 VAGUE (NET);
+Don't Know;
 none;
 Missing Answer<z>;
 Total Count<C>",
@@ -1857,11 +1870,12 @@ Missing Answer<z>;
 Total Count<C>",
 
 !=========  
-DM $TQINV4 = $QINV4/600,1000,3000,4000,8000, R,F,
+DM $TQINV4 = $QINV4/600,1000,1800,3000,4000,8000, R,F,
 XT = "QINV4. AMOUNT ALLOTED FOR INVESTMENTS ON MONTHLY BUDGET",
 X = "
 600<V600>;
 1000<v1000>;
+1800<v1800>;
 3000<V3000>;
 4000<V4000>;
 8000<V8000>;
@@ -1878,6 +1892,7 @@ $A_QINS1/2,
 $QINS1_3_other/1024,
 $QINS1_3_other/1026,
 $QINS1_3_other/1027,
+$QINS1_3_other/1035,
 
 $A_QINS1/4..13,
 $A_QINS1/4,
@@ -1893,6 +1908,7 @@ $A_QINS1/13,
 $QINS1_14_other/1024,
 $QINS1_14_other/1026,
 $QINS1_14_other/1027,
+$QINS1_14_other/1035,
 
 $QINS1_OTHERS/1020+1021+1022+1023+1028+1029+1030,
 $QINS1_OTHERS/1020,
@@ -1915,6 +1931,7 @@ LIFE INSURANCE (NET)<Q>;
 `     Lifebank insurance;
 `     Security  social system/SSS;
 `     St. Peter;
+`     Palawan Insurance;
 
 NON-LIFE INSURANCE (NET)<Q>;  
 `     Accident & Health Insurance without Life insurance(Provides health and accident coverage);
@@ -1931,6 +1948,7 @@ NON-LIFE INSURANCE (NET)<Q>;
 `     Lifebank insurance;
 `     Security  social system/SSS;
 `     St. Peter;
+`     Palawan Insurance;
 
 GOVERNMENT INSURANCE (NET)<q>;
 `     GSIS;
@@ -1981,6 +1999,7 @@ $XT_QINS2_[A]_QINS2_98_other/1023,
 $XT_QINS2_[A]_QINS2_98_other/1024,
 $XT_QINS2_[A]_QINS2_98_other/1025,
 $XT_QINS2_[A]_QINS2_98_other/1027,
+$XT_QINS2_[A]_QINS2_98_other/1028,
 
 R,F,
 VT = "QINS2. AVAILMENT CHANNEL FOR CURRENT INSURANCE - [QINS2.A]",
@@ -2001,6 +2020,7 @@ Lifebank Insurance;
 To the company where I work;
 Cooperative;
 Provided by the company;
+Microfibance Insurance;
 Missing Answer<z>;
 Total Count<C>",
 [*END A]
@@ -2026,6 +2046,8 @@ $XT_QINS3_[A]_QINS3_98_other/1021,
 $XT_QINS3_[A]_QINS3_98_other/1022,
 $XT_QINS3_[A]_QINS3_98_other/1024,
 $XT_QINS3_[A]_QINS3_98_other/1025,
+$XT_QINS3_[A]_QINS3_98_other/1027,
+
 $XT_QINS3_[A]_QINS3_98_other/1023,
 
 R,F,
@@ -2049,6 +2071,7 @@ GCash;
 Provided by company;
 Agent;
 Salary deduction;
+Collector;
 
 VAGUE (NET);
 
@@ -2612,7 +2635,7 @@ X = $TQL4_TOP2BOX,
 DM $TQL5 = 
 $A_QL5/1,
 $A_QL5/2+($QL5_91_other/1026),
-$A_QL5/3+($QL5_91_other/1022+1023+1024+1027+1029+1030+1031+1034+1035+1038),
+$A_QL5/3+($QL5_91_other/1022+1023+1024+1027+1029+1030+1031+1034+1035+1038+1040),
 $A_QL5/4+($QL5_91_other/1037),
 
 $A_QL5/91.$QL5_91_other/B,
@@ -2719,7 +2742,7 @@ $I_[ql6stubscode.A]_A_QL6_7/1+($I_[ql6stubscode.A]_QL6_91_other/1007),
 $I_[ql6stubscode.A]_A_QL6_8/1,
 $I_[ql6stubscode.A]_A_QL6_9/1,
 $I_[ql6stubscode.A]_A_QL6_10/1+($I_[ql6stubscode.A]_QL6_91_other/1013),
-$I_[ql6stubscode.A]_A_QL6_11/1,
+$I_[ql6stubscode.A]_A_QL6_11/1+($I_[ql6stubscode.A]_QL6_91_other/1027),
 $I_[ql6stubscode.A]_A_QL6_12/1+($I_[ql6stubscode.A]_QL6_91_other/1017),
 $I_[ql6stubscode.A]_A_QL6_13/1+($I_[ql6stubscode.A]_QL6_91_other/1003),
 $I_[ql6stubscode.A]_A_QL6_14/1,
@@ -2832,7 +2855,7 @@ $I_[A]_A_QL6_7_AC/1+($I_[A]_QL6_91_other_AC/1007),
 $I_[A]_A_QL6_8_AC/1,
 $I_[A]_A_QL6_9_AC/1,
 $I_[A]_A_QL6_10_AC/1+($I_[A]_QL6_91_other_AC/1013),
-$I_[A]_A_QL6_11_AC/1,
+$I_[A]_A_QL6_11_AC/1+($I_[A]_QL6_91_other_AC/1027),
 $I_[A]_A_QL6_12_AC/1+($I_[A]_QL6_91_other_AC/1017),
 $I_[A]_A_QL6_13_AC/1+($I_[A]_QL6_91_other_AC/1003),
 $I_[A]_A_QL6_14_AC/1,
@@ -3286,7 +3309,14 @@ INCIDENCE OF ALLOTING MONTHLY BUDGET FOR LOANS - MORE THAN MONTHLY FREQUENCY",
 
 
 !=========  
-DM $TQL27a = $A_QL27a/1,2,3,4,5,6,91,R,F,
+DM $TQL27a = 
+$A_QL27a/1,
+$A_QL27a/2,
+$A_QL27a/3,
+$A_QL27a/4+$XQL27a_91_other/1020,
+$A_QL27a/5,
+$A_QL27a/6,
+$XQL27a_91_other/1022,1023,R,F,
 VT = "QL27a. WHY PAY EARLY",
 V = "
 I have extra money;
@@ -3295,14 +3325,24 @@ I want to get rewards;
 I am afraid to be charged of the late payment fee;
 I usually pay it together with my other bills;
 To be able to manage my budget;
-others;
+To borrow again;
+Salary deduction;
+
 Missing Answer<z>;
 Total Count<C>",
 
 
 !=========  
 
-DM $TQL27b = $A_QL27b/1,2,3,4,5,6,7,91,R,F,
+DM $TQL27b = 
+$A_QL27b/1,
+$A_QL27b/2,
+$A_QL27b/3,
+$A_QL27b/4+$XQL27b_91_other/1026,
+$A_QL27b/5,
+$A_QL27b/6+$XQL27b_91_other/1020+1024+1025,
+$A_QL27b/7,
+$XQL27b_91_other/1021,1022,1023,R,F,
 VT = "QL27b. WHY PAY ON TIME",
 V = "
 Due date matches my pay date;
@@ -3311,14 +3351,23 @@ I want to get rewards;
 I am afraid to be charged of the late payment fee;
 I usually pay it together with my other bills;
 To be able to manage my budget;
-Donï¿½t have time to pay earlier;
-others;
+Don’t have time to pay earlier;
+Automatic salary deduction;
+To be able to borrow again;
+Past due date is not allowed;
+
 Missing Answer<z>;
 Total Count<C>",
 
 !=========  
 
-DM $TQL27c = $A_QL27c/1,2,3,4,5,91,R,F,
+DM $TQL27c = 
+$A_QL27c/1,
+$A_QL27c/2,
+$A_QL27c/3,
+$A_QL27c/4,
+$A_QL27c/5,
+$XQL27c_91_other/1030,R,F,
 VT = "QL27c. WHY PAY LATE",
 V = "
 My salary arrived late;
@@ -3326,7 +3375,7 @@ Don't have enough money at the moment;
 I have more urgent needs/something unexpected came up;
 Forgot to pay;
 Don't have time to pay;
-others;
+No due date, pay whenever you want;
 Missing Answer<z>;
 Total Count<C>",
 
